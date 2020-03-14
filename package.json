@@ -1,12 +1,21 @@
 {
   "name": "rona",
   "version": "1.0.0",
-  "description": "",
+  "description": "Corona Virus Stats w/ API from https://covid19.mathdro.id/api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "next start",
+    "dev": "next -p 9999",
+    "build": "next build"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Conner Matson",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.3.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "styled-components": "^5.0.1"
+  }
 }
