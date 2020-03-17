@@ -18,6 +18,22 @@ const StatBlock = styled.div`
   text-align: center;
 `;
 
+const ButtonStyle = styled.button`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: transparent;
+  border: none;
+
+  button {
+    height: 40px;
+    width: 120px;
+    border-radius: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+`;
+
 const StateStats = ({ url }) => {
   const { stats, loading, error } = useStats(url);
   let [num, setNum] = useState(0);
@@ -28,22 +44,25 @@ const StateStats = ({ url }) => {
 
   return (
     <>
-      <button
-        onClick={() => {
-          num -= 1;
-          setNum(num);
-        }}
-      >
-        Last State
-      </button>
-      <button
-        onClick={() => {
-          num += 1;
-          setNum(num);
-        }}
-      >
-        Next State
-      </button>
+      <ButtonStyle>
+        <button
+          onClick={() => {
+            num -= 1;
+            setNum(num);
+          }}
+        >
+          Last State
+        </button>
+
+        <button
+          onClick={() => {
+            num += 1;
+            setNum(num);
+          }}
+        >
+          Next State
+        </button>
+      </ButtonStyle>
       <StatGrid>
         <StatBlock>
           <h3>State: </h3>

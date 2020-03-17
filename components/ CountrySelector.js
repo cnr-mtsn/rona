@@ -21,10 +21,14 @@ export default function CountrySelector() {
   if (error) return <p>Error...</p>;
 
   return (
-    <div>
+    <>
       <CountrySelectorStyle>
-        <h2>Currently Showing {selectedCountry}</h2>
+        <h2>Select a Country</h2>
         <select
+          style={{
+            height: "50px",
+            fontSize: "1.3rem",
+          }}
           onChange={e => {
             setSelectedCountry(e.target.value);
           }}
@@ -43,6 +47,6 @@ export default function CountrySelector() {
       <Stats
         url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}
       ></Stats>
-    </div>
+    </>
   );
 }

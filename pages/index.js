@@ -1,15 +1,6 @@
 import React from "react";
-import Layout from "../components/styles/Layout";
-import Stats from "../components/Stats";
-import CountrySelector from "../components/ CountrySelector";
+import WorldStats from "../components/WorldStats";
 
-const index = () => {
-  return (
-    <Layout>
-      <Stats url='https://covid19.mathdro.id/api' />
-      <CountrySelector />
-    </Layout>
-  );
-};
+const index = () => <WorldStats />;
 
 export default index;
