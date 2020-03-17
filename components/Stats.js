@@ -2,21 +2,8 @@ import React from "react";
 import useStats from "../lib/useStats";
 import styled from "styled-components";
 
-const StatGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-`;
-const StatBlock = styled.div`
-  background: #f2f2f2;
-  font-size: 2rem;
-  padding: 2rem;
-  border-radius: 2rem;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-`;
+const StatGrid = styled.div``;
+const StatBlock = styled.div``;
 
 const Stats = ({ url }) => {
   const { stats, loading, error } = useStats(url);
@@ -33,20 +20,24 @@ const Stats = ({ url }) => {
   return (
     <StatGrid>
       <StatBlock>
-        <h4>Confirmed: </h4>
-        <span>{stats.confirmed.value}</span>
+        <h4>
+          Confirmed: <span>{stats.confirmed.value}</span>
+        </h4>
       </StatBlock>
       <StatBlock>
-        <h4>Recovered: </h4>
-        <span>{stats.recovered.value}</span>
+        <h4>
+          Recovered: <span>{stats.recovered.value}</span>
+        </h4>
       </StatBlock>
       <StatBlock>
-        <h4>Deaths: </h4>
-        <span>{stats.deaths.value}</span>
+        <h4>
+          Deaths: <span>{stats.deaths.value}</span>
+        </h4>
       </StatBlock>
       <StatBlock>
-        <h4>Mortality Rate: </h4>
-        <span>{mortalityRate}%</span>
+        <h4>
+          Mortality Rate: <span>{mortalityRate}%</span>
+        </h4>
       </StatBlock>
     </StatGrid>
   );

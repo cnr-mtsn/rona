@@ -3,13 +3,7 @@ import styled from "styled-components";
 import useStats from "../lib/useStats";
 import Stats from "./Stats";
 
-const CountrySelectorStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-`;
+const CountrySelectorStyle = styled.div``;
 
 export default function CountrySelector() {
   const { stats: countries, loading, error } = useStats(
@@ -23,12 +17,8 @@ export default function CountrySelector() {
   return (
     <>
       <CountrySelectorStyle>
-        <h2>Select a Country</h2>
+        <h4>Select a Country</h4>
         <select
-          style={{
-            height: "50px",
-            fontSize: "1.3rem",
-          }}
           onChange={e => {
             setSelectedCountry(e.target.value);
           }}

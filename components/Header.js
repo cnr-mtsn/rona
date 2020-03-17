@@ -4,10 +4,13 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
 const MyHeader = styled.nav`
-  display: grid;
+  display: flex;
+  justify-content: space-around;
+  /* display: grid;
   grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
   padding: 1rem;
   border-bottom: 4px solid slategray;
+  */
   background: rgb(21, 22, 21);
   background: linear-gradient(
     90deg,
@@ -15,6 +18,7 @@ const MyHeader = styled.nav`
     rgba(137, 69, 187, 1) 100%
   );
   color: white;
+  /*
   h3,
   a {
     cursor: pointer;
@@ -27,10 +31,13 @@ const MyHeader = styled.nav`
   h3:hover {
     font-size: 24px;
   }
+  */
   a {
     justify-content: flex-start;
     margin-left: 20px;
     color: black;
+    display: flex;
+    align-items: center;
   }
 `;
 

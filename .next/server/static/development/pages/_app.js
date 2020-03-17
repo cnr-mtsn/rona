@@ -161,10 +161,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const MyHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.nav`
-  display: grid;
+  display: flex;
+  justify-content: space-around;
+  /* display: grid;
   grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
   padding: 1rem;
   border-bottom: 4px solid slategray;
+  */
   background: rgb(21, 22, 21);
   background: linear-gradient(
     90deg,
@@ -172,6 +175,7 @@ const MyHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.nav`
     rgba(137, 69, 187, 1) 100%
   );
   color: white;
+  /*
   h3,
   a {
     cursor: pointer;
@@ -184,10 +188,13 @@ const MyHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.nav`
   h3:hover {
     font-size: 24px;
   }
+  */
   a {
     justify-content: flex-start;
     margin-left: 20px;
     color: black;
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -195,66 +202,66 @@ const Header = props => {
   return __jsx(MyHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 46
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 47
     },
     __self: undefined
   }, "Corona Virus Stats"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 48
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 49
     },
     __self: undefined
   }, "WorldWide Stats")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/countries",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 51
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 52
     },
     __self: undefined
   }, "Stats by Country")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/states",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 54
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 55
     },
     __self: undefined
   }, "Stats by State")), __jsx("a", {
     href: "https://www.github.com/cnr-mtsn/rona",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 57
     },
     __self: undefined
   }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaGithub"], {
     size: 32,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 58
     },
     __self: undefined
   })));
