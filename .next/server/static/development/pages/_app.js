@@ -120,7 +120,7 @@ const MyFooter = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.footer
   position: fixed;
   bottom: 0;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 `;
 
 const Footer = () => {
@@ -173,7 +173,7 @@ const MyHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.nav`
   );
   color: white;
   h3,
-  span {
+  a {
     cursor: pointer;
     margin: 0;
     display: flex;
@@ -184,9 +184,10 @@ const MyHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.nav`
   h3:hover {
     font-size: 24px;
   }
-  span {
+  a {
     justify-content: flex-start;
     margin-left: 20px;
+    color: black;
   }
 `;
 
@@ -194,62 +195,56 @@ const Header = props => {
   return __jsx(MyHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: undefined
   }, "Corona Virus Stats"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: undefined
   }, "WorldWide Stats")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/countries",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: undefined
   }, "Stats by Country")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/states",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: undefined
-  }, "Stats by State")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "Stats by State")), __jsx("a", {
     href: "https://www.github.com/cnr-mtsn/rona",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: undefined
-  }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
@@ -262,7 +257,7 @@ const Header = props => {
       lineNumber: 51
     },
     __self: undefined
-  }))));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);

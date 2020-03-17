@@ -10,7 +10,7 @@ const MyFooter = styled.footer`
   position: fixed;
   bottom: 0;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 `;
 const Footer = () => {
   return <MyFooter>© 2020 CNR_MTSN || github.com/cnr-mtsn</MyFooter>;
