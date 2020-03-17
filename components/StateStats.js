@@ -13,6 +13,10 @@ const ButtonStyle = styled.button`
 
 const StateStats = ({ url }) => {
   const { stats, loading, error } = useStats(url);
+  const mortalityRate = (
+    (100 / stats[num].confirmed) *
+    stats[num].deaths
+  ).toFixed(2);
   let [num, setNum] = useState(0);
   console.log(stats, loading, error);
 
@@ -43,6 +47,11 @@ const StateStats = ({ url }) => {
         <StatBlock>
           <h3>
             Active: <span>{stats[num].active}</span>
+          </h3>
+        </StatBlock>
+        <StatBlock>
+          <h3>
+            Mortality Rate: <span>{mortalityRate}%</span>
           </h3>
         </StatBlock>
         <ButtonStyle>
