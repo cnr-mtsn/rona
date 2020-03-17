@@ -8,10 +8,10 @@ const MyHeader = styled.nav`
   grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
   padding: 1rem;
   border-bottom: 4px solid slategray;
-  background: rgb(0, 255, 254);
+  background: rgb(21, 22, 21);
   background: linear-gradient(
     90deg,
-    rgba(0, 255, 254, 1) 0%,
+    rgba(21, 22, 21, 1) 0%,
     rgba(137, 69, 187, 1) 100%
   );
   color: white;
@@ -47,7 +47,7 @@ const Header = props => {
         <h3>Stats by State</h3>
       </Link>
       <a href='https://www.github.com/cnr-mtsn/rona'>
-        <FaGithub size={32} />
+        <FaGithub size={32} color={black} />
       </a>
     </MyHeader>
   );
