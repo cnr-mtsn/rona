@@ -30,6 +30,7 @@ const MyHeader = styled.nav`
   a {
     justify-content: flex-start;
     margin-left: 20px;
+    color: black;
   }
 `;
 
@@ -47,7 +48,7 @@ const Header = props => {
         <h3>Stats by State</h3>
       </Link>
       <a href='https://www.github.com/cnr-mtsn/rona'>
-        <FaGithub size={32} color={black} />
+        <FaGithub size={32} />
       </a>
     </MyHeader>
   );
