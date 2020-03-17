@@ -16,7 +16,7 @@ const MyHeader = styled.nav`
   );
   color: white;
   h3,
-  span {
+  a {
     cursor: pointer;
     margin: 0;
     display: flex;
@@ -27,7 +27,7 @@ const MyHeader = styled.nav`
   h3:hover {
     font-size: 24px;
   }
-  span {
+  a {
     justify-content: flex-start;
     margin-left: 20px;
   }
@@ -46,11 +46,9 @@ const Header = props => {
       <Link href='/states'>
         <h3>Stats by State</h3>
       </Link>
-      <Link href='https://www.github.com/cnr-mtsn/rona'>
-        <span>
-          <FaGithub size={32} />
-        </span>
-      </Link>
+      <a href='https://www.github.com/cnr-mtsn/rona'>
+        <FaGithub size={32} />
+      </a>
     </MyHeader>
   );
 };
