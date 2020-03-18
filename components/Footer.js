@@ -16,7 +16,10 @@ const Footer = () => {
         fontSize: "1.1rem",
       }}
     >
-      © 2020 CNR_MTSN || github.com/cnr-mtsn
+      © 2020{" "}
+      <a href='http://github.com/cnr-mtsn/rona' alt='link to repo'>
+        CNR_MTSN
+      </a>
     </footer>
   );
 };
