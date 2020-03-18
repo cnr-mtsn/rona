@@ -104,30 +104,27 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/connermatson/Projects/rona/components/Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const MyFooter = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.footer`
-  height: 50px;
-  width: 100%;
-  background: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  color: white;
-  font-size: 1.1rem;
-`;
-
 const Footer = () => {
-  return __jsx(MyFooter, {
+  return __jsx("footer", {
+    style: {
+      height: "50px",
+      width: "100%",
+      background: "black",
+      display: "flex",
+      justifyContent: "space-around",
+      alignItems: "center",
+      position: "fixed",
+      bottom: "0",
+      color: "white",
+      fontSize: "1.1rem"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 5
     },
     __self: undefined
   }, "\xA9 2020 CNR_MTSN || github.com/cnr-mtsn");
@@ -148,120 +145,94 @@ const Footer = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/fa */ "react-icons/fa");
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fa */ "react-icons/fa");
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/connermatson/Projects/rona/components/Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-const MyHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.nav`
-  display: flex;
-  justify-content: space-around;
-  /* display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
-  padding: 1rem;
-  border-bottom: 4px solid slategray;
-  */
-  background: rgb(21, 22, 21);
-  background: linear-gradient(
-    90deg,
-    rgba(21, 22, 21, 1) 0%,
-    rgba(137, 69, 187, 1) 100%
-  );
-  color: white;
-  /*
-  h3,
-  a {
-    cursor: pointer;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-  }
-  h3:hover {
-    font-size: 24px;
-  }
-  */
-  a {
-    justify-content: flex-start;
-    margin-left: 20px;
-    color: black;
-    display: flex;
-    align-items: center;
-  }
-`;
-
 const Header = props => {
-  return __jsx(MyHeader, {
+  return __jsx("header", {
+    style: {
+      display: "flex",
+      justifyContent: "space-around",
+      background: "rgb(21, 22, 21)",
+      background: "linear-gradient(90deg, rgba(21, 22, 21, 1) 0%, rgba(137, 69, 187, 1) 100%)",
+      color: "white"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 8
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 18
     },
     __self: undefined
-  }, "Corona Virus Stats"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "Corona Virus Stats"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 19
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 20
     },
     __self: undefined
-  }, "WorldWide Stats")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "WorldWide Stats")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/countries",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 22
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 23
     },
     __self: undefined
-  }, "Stats by Country")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "Stats by Country")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/states",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 25
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 26
     },
     __self: undefined
   }, "Stats by State")), __jsx("a", {
     href: "https://www.github.com/cnr-mtsn/rona",
+    style: {
+      display: "flex",
+      justifyContent: "flex-start",
+      marginLeft: "20px",
+      color: "black",
+      alignItems: "center"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 28
     },
     __self: undefined
-  }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaGithub"], {
+  }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaGithub"], {
     size: 32,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 38
     },
     __self: undefined
   })));
@@ -282,23 +253,15 @@ const Header = props => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/connermatson/Projects/rona/components/styles/Layout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const LayoutStyle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
-  height: 100vh;
-  width: 100vw;
-  background: #eff1f3;
-`;
-
 const Layout = props => {
-  return __jsx(LayoutStyle, {
+  return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 4
     },
     __self: undefined
   }, props.children);
@@ -2257,17 +2220,6 @@ module.exports = require("react-icons/fa");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
-
-/***/ }),
-
-/***/ "styled-components":
-/*!************************************!*\
-  !*** external "styled-components" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("styled-components");
 
 /***/ }),
 

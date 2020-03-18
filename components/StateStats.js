@@ -1,22 +1,8 @@
 import React, { useState } from "react";
 import useStats from "../lib/useStats";
-import styled from "styled-components";
-
-const StatGrid = styled.div``;
-const StatBlock = styled.div``;
-
-const ButtonStyle = styled.button`
-  border: none;
-  background: transparent;
-  margin: 30px 0 30px 0;
-`;
 
 const StateStats = ({ url }) => {
   const { stats, loading, error } = useStats(url);
-  const mortalityRate = (
-    (100 / stats[num].confirmed) *
-    stats[num].deaths
-  ).toFixed(2);
   let [num, setNum] = useState(0);
   console.log(stats, loading, error);
 
@@ -25,36 +11,31 @@ const StateStats = ({ url }) => {
 
   return (
     <>
-      <StatGrid>
+      <div>
         <h3>
           State: <span>{stats[num].provinceState}</span>
         </h3>
-        <StatBlock>
+        <div>
           <h3>
             Confirmed: <span>{stats[num].confirmed}</span>
           </h3>
-        </StatBlock>
-        <StatBlock>
+        </div>
+        <div>
           <h3>
             Recovered: <span>{stats[num].recovered}</span>
           </h3>
-        </StatBlock>
-        <StatBlock>
+        </div>
+        <div>
           <h3>
             Deaths: <span>{stats[num].deaths}</span>
           </h3>
-        </StatBlock>
-        <StatBlock>
+        </div>
+        <div>
           <h3>
             Active: <span>{stats[num].active}</span>
           </h3>
-        </StatBlock>
-        <StatBlock>
-          <h3>
-            Mortality Rate: <span>{mortalityRate}%</span>
-          </h3>
-        </StatBlock>
-        <ButtonStyle>
+        </div>
+        <div>
           <button
             onClick={() => {
               num -= 1;
@@ -72,8 +53,8 @@ const StateStats = ({ url }) => {
           >
             Next State
           </button>
-        </ButtonStyle>
-      </StatGrid>
+        </div>
+      </div>
     </>
   );
 };

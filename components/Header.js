@@ -1,49 +1,20 @@
 import React from "react";
-import styled from "styled-components";
+
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
-const MyHeader = styled.nav`
-  display: flex;
-  justify-content: space-around;
-  /* display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
-  padding: 1rem;
-  border-bottom: 4px solid slategray;
-  */
-  background: rgb(21, 22, 21);
-  background: linear-gradient(
-    90deg,
-    rgba(21, 22, 21, 1) 0%,
-    rgba(137, 69, 187, 1) 100%
-  );
-  color: white;
-  /*
-  h3,
-  a {
-    cursor: pointer;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-  }
-  h3:hover {
-    font-size: 24px;
-  }
-  */
-  a {
-    justify-content: flex-start;
-    margin-left: 20px;
-    color: black;
-    display: flex;
-    align-items: center;
-  }
-`;
-
 const Header = props => {
   return (
-    <MyHeader>
+    <header
+      style={{
+        display: "flex",
+        justifyContent: "space-around",
+        background: "rgb(21, 22, 21)",
+        background:
+          "linear-gradient(90deg, rgba(21, 22, 21, 1) 0%, rgba(137, 69, 187, 1) 100%)",
+        color: "white",
+      }}
+    >
       <h1>Corona Virus Stats</h1>
       <Link href='/'>
         <h3>WorldWide Stats</h3>
@@ -54,10 +25,19 @@ const Header = props => {
       <Link href='/states'>
         <h3>Stats by State</h3>
       </Link>
-      <a href='https://www.github.com/cnr-mtsn/rona'>
+      <a
+        href='https://www.github.com/cnr-mtsn/rona'
+        style={{
+          display: "flex",
+          justifyContent: "flex-start",
+          marginLeft: "20px",
+          color: "black",
+          alignItems: "center",
+        }}
+      >
         <FaGithub size={32} />
       </a>
-    </MyHeader>
+    </header>
   );
 };
 

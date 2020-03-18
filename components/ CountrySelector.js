@@ -1,9 +1,7 @@
 import { useState } from "react";
-import styled from "styled-components";
+
 import useStats from "../lib/useStats";
 import Stats from "./Stats";
-
-const CountrySelectorStyle = styled.div``;
 
 export default function CountrySelector() {
   const { stats: countries, loading, error } = useStats(
@@ -16,7 +14,7 @@ export default function CountrySelector() {
 
   return (
     <>
-      <CountrySelectorStyle>
+      <div>
         <h4>Select a Country</h4>
         <select
           onChange={e => {
@@ -33,7 +31,7 @@ export default function CountrySelector() {
             </option>
           ))}
         </select>
-      </CountrySelectorStyle>
+      </div>
       <Stats
         url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}
       ></Stats>
