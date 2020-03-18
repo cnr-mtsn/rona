@@ -1085,25 +1085,39 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 12
       },
       __self: this
-    }), __jsx("body", {
-      style: {
-        background: "#f2f2f2"
-      },
+    }, __jsx("title", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 13
       },
       __self: this
+    }, "Covid-19 Stats"), __jsx("meta", {
+      name: "viewport",
+      content: "initial-scale=1.0, width=device-width",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    })), __jsx("body", {
+      style: {
+        background: "#f2f2f2"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 24
       },
       __self: this
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 25
       },
       __self: this
     })));
