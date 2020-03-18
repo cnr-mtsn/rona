@@ -14,27 +14,52 @@ const Stats = ({ url }) => {
   ).toFixed(2);
 
   return (
-    <div>
-      <div>
-        <h4>
-          Confirmed: <span>{stats.confirmed.value}</span>
-        </h4>
-      </div>
-      <div>
-        <h4>
-          Recovered: <span>{stats.recovered.value}</span>
-        </h4>
-      </div>
-      <div>
-        <h4>
-          Deaths: <span>{stats.deaths.value}</span>
-        </h4>
-      </div>
-      <div>
-        <h4>
-          Mortality Rate: <span>{mortalityRate}%</span>
-        </h4>
-      </div>
+    <div
+      style={{
+        padding: "4vw",
+      }}
+    >
+      <table
+        style={{
+          width: "90vw",
+          textAlign: "center",
+        }}
+      >
+        <tr
+          style={{
+            outline: "1px solid black",
+          }}
+        >
+          <td
+            style={{
+              borderRight: "1px solid black",
+            }}
+          >
+            Confirmed
+          </td>
+          <td
+            style={{
+              borderRight: "1px solid black",
+            }}
+          >
+            Recovered
+          </td>
+          <td
+            style={{
+              borderRight: "1px solid black",
+            }}
+          >
+            Deaths
+          </td>
+          <td>Mortality</td>
+        </tr>
+        <tr>
+          <td>{stats.confirmed.value}</td>
+          <td>{stats.recovered.value}</td>
+          <td>{stats.deaths.value}</td>
+          <td>{mortalityRate}%</td>
+        </tr>
+      </table>
     </div>
   );
 };

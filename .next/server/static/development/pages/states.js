@@ -137,85 +137,58 @@ const StateStats = ({
     },
     __self: undefined
   }, "Error...");
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, __jsx("h3", {
+    style: {
+      textAlign: "center"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: undefined
-  }, __jsx("h3", {
+  }, stats[num].provinceState), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, "State: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }, stats[num].provinceState)), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 22
     },
     __self: undefined
   }, "Confirmed: ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, stats[num].confirmed))), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: undefined
-  }, __jsx("h3", {
+  }, stats[num].confirmed)), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: undefined
   }, "Recovered: ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 27
     },
     __self: undefined
-  }, stats[num].recovered))), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: undefined
-  }, __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: undefined
-  }, "Deaths: ", __jsx("span", {
+  }, stats[num].recovered)), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: undefined
-  }, stats[num].deaths))), __jsx("div", {
+  }, "Deaths: ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 31
     },
     __self: undefined
-  }, __jsx("h3", {
+  }, stats[num].deaths)), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
@@ -227,20 +200,14 @@ const StateStats = ({
       lineNumber: 35
     },
     __self: undefined
-  }, stats[num].active))), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: undefined
-  }, __jsx("button", {
+  }, stats[num].active)), __jsx("button", {
     onClick: () => {
       num -= 1;
       setNum(num);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: undefined
   }, "Last State"), __jsx("button", {
@@ -250,10 +217,10 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 46
     },
     __self: undefined
-  }, "Next State"))));
+  }, "Next State"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (StateStats);

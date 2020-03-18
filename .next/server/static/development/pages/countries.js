@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -228,81 +228,94 @@ const Stats = ({
   }, "Error...");
   const mortalityRate = (100 / stats.confirmed.value * stats.deaths.value).toFixed(2);
   return __jsx("div", {
+    style: {
+      padding: "4vw"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: undefined
-  }, __jsx("div", {
+  }, __jsx("table", {
+    style: {
+      width: "90vw",
+      textAlign: "center"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 22
     },
     __self: undefined
-  }, __jsx("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
+  }, __jsx("tr", {
+    style: {
+      outline: "1px solid black"
     },
-    __self: undefined
-  }, "Confirmed: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, stats.confirmed.value))), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: undefined
-  }, __jsx("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: undefined
-  }, "Recovered: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: undefined
-  }, stats.recovered.value))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: undefined
-  }, __jsx("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
+  }, __jsx("td", {
+    style: {
+      borderRight: "1px solid black"
     },
-    __self: undefined
-  }, "Deaths: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: undefined
-  }, stats.deaths.value))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: undefined
-  }, __jsx("h4", {
+  }, "Confirmed"), __jsx("td", {
+    style: {
+      borderRight: "1px solid black"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 40
     },
     __self: undefined
-  }, "Mortality Rate: ", __jsx("span", {
+  }, "Recovered"), __jsx("td", {
+    style: {
+      borderRight: "1px solid black"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 47
+    },
+    __self: undefined
+  }, "Deaths"), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: undefined
+  }, "Mortality")), __jsx("tr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: undefined
+  }, __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: undefined
+  }, stats.confirmed.value), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: undefined
+  }, stats.recovered.value), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: undefined
+  }, stats.deaths.value), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
     },
     __self: undefined
   }, mortalityRate, "%"))));
@@ -392,7 +405,7 @@ const states = () => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!**********************************!*\
   !*** multi ./pages/countries.js ***!
   \**********************************/

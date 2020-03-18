@@ -143,81 +143,94 @@ var Stats = function Stats(_ref) {
   }, "Error...");
   var mortalityRate = (100 / stats.confirmed.value * stats.deaths.value).toFixed(2);
   return __jsx("div", {
+    style: {
+      padding: "4vw"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  }, __jsx("div", {
+  }, __jsx("table", {
+    style: {
+      width: "90vw",
+      textAlign: "center"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 22
     },
     __self: this
-  }, __jsx("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
+  }, __jsx("tr", {
+    style: {
+      outline: "1px solid black"
     },
-    __self: this
-  }, "Confirmed: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, stats.confirmed.value))), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, __jsx("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, "Recovered: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, stats.recovered.value))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
-  }, __jsx("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
+  }, __jsx("td", {
+    style: {
+      borderRight: "1px solid black"
     },
-    __self: this
-  }, "Deaths: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, stats.deaths.value))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }, __jsx("h4", {
+  }, "Confirmed"), __jsx("td", {
+    style: {
+      borderRight: "1px solid black"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 40
     },
     __self: this
-  }, "Mortality Rate: ", __jsx("span", {
+  }, "Recovered"), __jsx("td", {
+    style: {
+      borderRight: "1px solid black"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 47
+    },
+    __self: this
+  }, "Deaths"), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, "Mortality")), __jsx("tr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, stats.confirmed.value), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, stats.recovered.value), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, stats.deaths.value), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
     },
     __self: this
   }, mortalityRate, "%"))));
@@ -1212,7 +1225,7 @@ var states = function states() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcountries&absolutePagePath=%2FUsers%2Fconnermatson%2FProjects%2Frona%2Fpages%2Fcountries.js ***!
   \******************************************************************************************************************************************/
@@ -1235,5 +1248,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=countries.js.map

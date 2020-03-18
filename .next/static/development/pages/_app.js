@@ -1,59 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
-/***/ "./components/Footer.js":
-/*!******************************!*\
-  !*** ./components/Footer.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/connermatson/Projects/rona/components/Footer.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-var Footer = function Footer() {
-  return __jsx("footer", {
-    style: {
-      height: "50px",
-      width: "100%",
-      background: "black",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      position: "fixed",
-      bottom: "0",
-      color: "white",
-      fontSize: "1.1rem"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx("a", {
-    style: {
-      margin: "0 auto",
-      color: "white",
-      textDecoration: "none"
-    },
-    href: "http://github.com/cnr-mtsn/rona",
-    alt: "link to repo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "\xA9 2020 CNR_MTSN"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Footer);
-
-/***/ }),
-
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -63,84 +9,72 @@ var Footer = function Footer() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
 var _jsxFileName = "/Users/connermatson/Projects/rona/components/Header.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 var Header = function Header(props) {
   return __jsx("header", {
-    style: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    style: {
+      margin: "0",
+      padding: "0",
+      fontSize: "4vw",
       display: "flex",
-      justifyContent: "space-around",
+      justifyContent: "space-evenly",
       alignItems: "center",
-      background: "rgb(126,241,142)"
-    }, "background", "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)"),
+      height: "8vh",
+      width: "100%",
+      borderBottom: "2px solid black"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "Corona Virus Stats"), __jsx("div", {
-    style: {
-      width: "30vw"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, __jsx("h3", {
-    style: {
-      cursor: "pointer"
-    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }, "WorldWide Stats")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/countries",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
   }, __jsx("h3", {
     style: {
       cursor: "pointer"
     },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "World")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/countries",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: this
-  }, "Stats by Country")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("h3", {
+    style: {
+      cursor: "pointer"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "Countries")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/states",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, __jsx("h3", {
@@ -149,10 +83,10 @@ var Header = function Header(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
-  }, "Stats by State")), __jsx("a", {
+  }, "States")), __jsx("a", {
     href: "https://www.github.com/cnr-mtsn/rona",
     style: {
       display: "flex",
@@ -163,14 +97,14 @@ var Header = function Header(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
-  }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaGithub"], {
-    size: 32,
+  }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaGithub"], {
+    size: 24,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   })));
@@ -189,17 +123,24 @@ var Header = function Header(props) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
 var _jsxFileName = "/Users/connermatson/Projects/rona/components/styles/Layout.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var Layout = function Layout(props) {
+  var _ref;
+
   return __jsx("div", {
+    style: (_ref = {
+      background: "rgb(126,241,142)"
+    }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "background", "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)"), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "height", "100vh"), _ref),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: this
   }, props.children);
@@ -781,18 +722,6 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 var e,t=(e=__webpack_require__(/*! querystring */ "./node_modules/querystring-es3/index.js"))&&"object"==typeof e&&"default"in e?e.default:e,r=/https?|ftp|gopher|file/;function o(e){"string"==typeof e&&(e=f(e));var o=function(e,t,r){var o=e.auth,a=e.hostname,s=e.protocol||"",h=e.pathname||"",c=e.hash||"",p=e.query||"",n=!1;o=o?encodeURIComponent(o).replace(/%3A/i,":")+"@":"",e.host?n=o+e.host:a&&(n=o+(~a.indexOf(":")?"["+a+"]":a),e.port&&(n+=":"+e.port)),p&&"object"==typeof p&&(p=t.encode(p));var l=e.search||p&&"?"+p||"";return s&&":"!==s.substr(-1)&&(s+=":"),e.slashes||(!s||r.test(s))&&!1!==n?(n="//"+(n||""),h&&"/"!==h[0]&&(h="/"+h)):n||(n=""),c&&"#"!==c[0]&&(c="#"+c),l&&"?"!==l[0]&&(l="?"+l),{protocol:s,host:n,pathname:h=h.replace(/[?#]/g,encodeURIComponent),search:l=l.replace("#","%23"),hash:c}}(e,t,r);return""+o.protocol+o.host+o.pathname+o.search+o.hash}var a="http://",s="w.w",h=a+s,c=/^https?|ftp|gopher|file/,p=/^(.*?)([#?].*)/,n=/^([a-z0-9.+-]*:)(\/{0,3})(.*)/i,l=/^([a-z0-9.+-]*:)?\/\/\/*/i,i=/^([a-z0-9.+-]*:)(\/{0,2})\[(.*)\]$/i;function u(e){try{return decodeURI(e)}catch(t){return e}}function f(e,r,a){void 0===r&&(r=!1),void 0===a&&(a=!1);var f=(e=e.trim()).match(p);e=f?u(f[1]).replace(/\\/g,"/")+f[2]:u(e).replace(/\\/g,"/"),i.test(e)&&"/"!==e.slice(-1)&&(e+="/");var m=!/(^javascript)/.test(e)&&e.match(n),v=l.test(e),d="";m&&(c.test(m[1])||(d=m[1].toLowerCase(),e=""+m[2]+m[3]),m[2]||(v=!1,c.test(m[1])?(d=m[1],e=""+m[3]):e="//"+m[3]),3!==m[2].length&&1!==m[2].length||(d=m[1],e="/"+m[3]));var g,b=e.match(/(:[0-9]+)/),y="";b&&b[1]&&3===b[1].length&&(e=e.replace(y=b[1],y+"00"));var w={},x="",R="";try{g=new URL(e)}catch(t){x=t,d||a||!/^\/\//.test(e)||/^\/\/.+[@.]/.test(e)||(R="/",e=e.substr(1));try{g=new URL(e,h)}catch(e){return w.protocol=d,w.href=d,w}}w.slashes=v&&!R,w.host=g.host===s?"":g.host,w.hostname=g.hostname===s?"":g.hostname.replace(/(\[|\])/g,""),w.protocol=x?d||null:g.protocol,w.search=g.search.replace(/\\/g,"%5C"),w.hash=g.hash.replace(/\\/g,"%5C");var U=e.split("#");!w.search&&~U[0].indexOf("?")&&(w.search="?"),w.hash||""!==U[1]||(w.hash="#"),w.query=r?t.decode(g.search.substr(1)):w.search.substr(1),w.pathname=R+u(g.pathname).replace(/"/g,"%22"),"about:"===w.protocol&&"blank"===w.pathname&&(w.protocol="",w.pathname=""),x&&"/"!==e[0]&&(w.pathname=w.pathname.substr(1)),d&&!c.test(d)&&"/"!==e.slice(-1)&&"/"===w.pathname&&(w.pathname=""),w.path=w.pathname+w.search,w.auth=[g.username,g.password].map(decodeURIComponent).filter(Boolean).join(":"),w.port=g.port,y&&(w.host=w.host.replace(y+"00",y),w.port=w.port.slice(0,-2)),w.href=R?""+w.pathname+w.search+w.hash:o(w);var j=/^(file)/.test(w.href)?["host","hostname"]:[];return Object.keys(w).forEach(function(e){~j.indexOf(e)||(w[e]=w[e]||null)}),w}var m=/^([a-z0-9.+-]*:\/\/\/)([a-z0-9.+-]:\/*)?/i,v=/https?|ftp|gopher|file/;function d(e,t){var r="string"==typeof e?f(e):e;e="object"==typeof e?o(e):e;var s=f(t),c="";r.protocol&&!r.slashes&&(c=r.protocol,e=e.replace(r.protocol,""),c+="/"===t[0]||"/"===e[0]?"/":""),c&&s.protocol&&(c="",s.slashes||(c=s.protocol,t=t.replace(s.protocol,"")));var p=e.match(m);p&&!s.protocol&&(e=e.substr((c=p[1]+(p[2]||"")).length),/^\/\/[^\/]/.test(t)&&(c=c.slice(0,-1)));var n=new URL(e,h+"/"),l=new URL(t,n).toString().replace(h,""),i=s.protocol||r.protocol;return i+=r.slashes||s.slashes?"//":"",!c&&i?l=l.replace(a,i):c&&(l=l.replace(a,"")),v.test(l)||~t.indexOf(".")||"/"===e.slice(-1)||"/"===t.slice(-1)||"/"!==l.slice(-1)||(l=l.slice(0,-1)),c&&(l=c+("/"===l[0]?l.substr(1):l)),l}exports.parse=f,exports.format=o,exports.resolve=d,exports.resolveObject=function(e,t){return f(d(e,t))};
 //# sourceMappingURL=index.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/next/app.js":
-/*!**********************************!*\
-  !*** ./node_modules/next/app.js ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./dist/pages/_app */ "./node_modules/next/dist/pages/_app.js")
 
 
 /***/ }),
@@ -2583,177 +2512,6 @@ function formatWithValidation(url, options) {
 exports.formatWithValidation = formatWithValidation;
 exports.SP = typeof performance !== 'undefined';
 exports.ST = exports.SP && typeof performance.mark === 'function' && typeof performance.measure === 'function';
-
-/***/ }),
-
-/***/ "./node_modules/next/dist/pages/_app.js":
-/*!**********************************************!*\
-  !*** ./node_modules/next/dist/pages/_app.js ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-
-var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-
-var _possibleConstructorReturn = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
-
-var _getPrototypeOf = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
-
-var _inherits = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
-
-var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.Container = Container;
-exports.createUrl = createUrl;
-exports["default"] = void 0;
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "./node_modules/next/dist/next-server/lib/utils.js");
-
-exports.AppInitialProps = _utils.AppInitialProps;
-/**
-* `App` component is used for initialize of pages. It allows for overwriting and full control of the `page` initialization.
-* This allows for keeping state between navigation, custom error handling, injecting additional data.
-*/
-
-function appGetInitialProps(_ref) {
-  var Component, ctx, pageProps;
-  return _regeneratorRuntime.async(function appGetInitialProps$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          Component = _ref.Component, ctx = _ref.ctx;
-          _context.next = 3;
-          return _regeneratorRuntime.awrap((0, _utils.loadGetInitialProps)(Component, ctx));
-
-        case 3:
-          pageProps = _context.sent;
-          return _context.abrupt("return", {
-            pageProps: pageProps
-          });
-
-        case 5:
-        case "end":
-          return _context.stop();
-      }
-    }
-  }, null, null, null, Promise);
-}
-
-var App = /*#__PURE__*/function (_react$default$Compon) {
-  _inherits(App, _react$default$Compon);
-
-  function App() {
-    _classCallCheck(this, App);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
-  }
-
-  _createClass(App, [{
-    key: "componentDidCatch",
-    // Kept here for backwards compatibility.
-    // When someone ended App they could call `super.componentDidCatch`.
-    // @deprecated This method is no longer needed. Errors are caught at the top level
-    value: function componentDidCatch(error, _errorInfo) {
-      throw error;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          router = _this$props.router,
-          Component = _this$props.Component,
-          pageProps = _this$props.pageProps,
-          __N_SSG = _this$props.__N_SSG,
-          __N_SSP = _this$props.__N_SSP;
-      return _react["default"].createElement(Component, Object.assign({}, pageProps, // we don't add the legacy URL prop if it's using non-legacy
-      // methods like getStaticProps and getServerSideProps
-      !(__N_SSG || __N_SSP) ? {
-        url: createUrl(router)
-      } : {}));
-    }
-  }]);
-
-  return App;
-}(_react["default"].Component);
-
-exports["default"] = App;
-App.origGetInitialProps = appGetInitialProps;
-App.getInitialProps = appGetInitialProps;
-var warnContainer;
-var warnUrl;
-
-if (true) {
-  warnContainer = (0, _utils.execOnce)(function () {
-    console.warn("Warning: the `Container` in `_app` has been deprecated and should be removed. https://err.sh/zeit/next.js/app-container-deprecated");
-  });
-  warnUrl = (0, _utils.execOnce)(function () {
-    console.error("Warning: the 'url' property is deprecated. https://err.sh/zeit/next.js/url-deprecated");
-  });
-} // @deprecated noop for now until removal
-
-
-function Container(p) {
-  if (true) warnContainer();
-  return p.children;
-}
-
-function createUrl(router) {
-  // This is to make sure we don't references the router object at call time
-  var pathname = router.pathname,
-      asPath = router.asPath,
-      query = router.query;
-  return {
-    get query() {
-      if (true) warnUrl();
-      return query;
-    },
-
-    get pathname() {
-      if (true) warnUrl();
-      return pathname;
-    },
-
-    get asPath() {
-      if (true) warnUrl();
-      return asPath;
-    },
-
-    back: function back() {
-      if (true) warnUrl();
-      router.back();
-    },
-    push: function push(url, as) {
-      if (true) warnUrl();
-      return router.push(url, as);
-    },
-    pushTo: function pushTo(href, as) {
-      if (true) warnUrl();
-      var pushRoute = as ? href : '';
-      var pushUrl = as || href;
-      return router.push(pushRoute, pushUrl);
-    },
-    replace: function replace(url, as) {
-      if (true) warnUrl();
-      return router.replace(url, as);
-    },
-    replaceTo: function replaceTo(href, as) {
-      if (true) warnUrl();
-      var replaceRoute = as ? href : '';
-      var replaceUrl = as || href;
-      return router.replace(replaceRoute, replaceUrl);
-    }
-  };
-}
 
 /***/ }),
 
@@ -12565,11 +12323,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_styles_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/styles/Layout */ "./components/styles/Layout.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_styles_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/styles/Layout */ "./components/styles/Layout.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
 
 var _jsxFileName = "/Users/connermatson/Projects/rona/pages/_app.js";
 
@@ -12577,36 +12332,28 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
-
 function MyApp(_ref) {
   var Component = _ref.Component,
       pageProps = _ref.pageProps;
-  return __jsx(_components_styles_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return __jsx(_components_styles_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 6
     },
     __self: this
-  }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 7
     },
     __self: this
   }), __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 8
     },
     __self: this
-  })), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }));
+  })));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (MyApp);

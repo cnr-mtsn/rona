@@ -10,52 +10,48 @@ const StateStats = ({ url }) => {
   if (error) return <p>Error...</p>;
 
   return (
-    <>
-      <div>
-        <h3>
-          State: <span>{stats[num].provinceState}</span>
-        </h3>
-        <div>
-          <h3>
-            Confirmed: <span>{stats[num].confirmed}</span>
-          </h3>
-        </div>
-        <div>
-          <h3>
-            Recovered: <span>{stats[num].recovered}</span>
-          </h3>
-        </div>
-        <div>
-          <h3>
-            Deaths: <span>{stats[num].deaths}</span>
-          </h3>
-        </div>
-        <div>
-          <h3>
-            Active: <span>{stats[num].active}</span>
-          </h3>
-        </div>
-        <div>
-          <button
-            onClick={() => {
-              num -= 1;
-              setNum(num);
-            }}
-          >
-            Last State
-          </button>
+    <div>
+      <h3
+        style={{
+          textAlign: "center",
+        }}
+      >
+        {stats[num].provinceState}
+      </h3>
 
-          <button
-            onClick={() => {
-              num += 1;
-              setNum(num);
-            }}
-          >
-            Next State
-          </button>
-        </div>
-      </div>
-    </>
+      <h3>
+        Confirmed: <span>{stats[num].confirmed}</span>
+      </h3>
+
+      <h3>
+        Recovered: <span>{stats[num].recovered}</span>
+      </h3>
+
+      <h3>
+        Deaths: <span>{stats[num].deaths}</span>
+      </h3>
+
+      <h3>
+        Active: <span>{stats[num].active}</span>
+      </h3>
+
+      <button
+        onClick={() => {
+          num -= 1;
+          setNum(num);
+        }}
+      >
+        Last State
+      </button>
+      <button
+        onClick={() => {
+          num += 1;
+          setNum(num);
+        }}
+      >
+        Next State
+      </button>
+    </div>
   );
 };
 

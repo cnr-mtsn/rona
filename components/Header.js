@@ -7,24 +7,25 @@ const Header = props => {
   return (
     <header
       style={{
+        margin: "0",
+        padding: "0",
+        fontSize: "4vw",
         display: "flex",
-        justifyContent: "space-around",
+        justifyContent: "space-evenly",
         alignItems: "center",
-        background: "rgb(126,241,142)",
-        background:
-          "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)",
+        height: "8vh",
+        width: "100%",
+        borderBottom: "2px solid black",
       }}
     >
-      <h1>Corona Virus Stats</h1>
-      <div style={{ width: "30vw" }}></div>
       <Link href='/'>
-        <h3 style={{ cursor: "pointer" }}>WorldWide Stats</h3>
+        <h3 style={{ cursor: "pointer" }}>World</h3>
       </Link>
       <Link href='/countries'>
-        <h3 style={{ cursor: "pointer" }}>Stats by Country</h3>
+        <h3 style={{ cursor: "pointer" }}>Countries</h3>
       </Link>
       <Link href='/states'>
-        <h3 style={{ cursor: "pointer" }}>Stats by State</h3>
+        <h3 style={{ cursor: "pointer" }}>States</h3>
       </Link>
       <a
         href='https://www.github.com/cnr-mtsn/rona'
@@ -36,7 +37,7 @@ const Header = props => {
           alignItems: "center",
         }}
       >
-        <FaGithub size={32} />
+        <FaGithub size={24} />
       </a>
     </header>
   );

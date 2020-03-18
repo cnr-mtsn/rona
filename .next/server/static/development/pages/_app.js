@@ -93,60 +93,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/Footer.js":
-/*!******************************!*\
-  !*** ./components/Footer.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/connermatson/Projects/rona/components/Footer.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const Footer = () => {
-  return __jsx("footer", {
-    style: {
-      height: "50px",
-      width: "100%",
-      background: "black",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      position: "fixed",
-      bottom: "0",
-      color: "white",
-      fontSize: "1.1rem"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: undefined
-  }, __jsx("a", {
-    style: {
-      margin: "0 auto",
-      color: "white",
-      textDecoration: "none"
-    },
-    href: "http://github.com/cnr-mtsn/rona",
-    alt: "link to repo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }, "\xA9 2020 CNR_MTSN"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Footer);
-
-/***/ }),
-
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -171,69 +117,58 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const Header = props => {
   return __jsx("header", {
     style: {
+      margin: "0",
+      padding: "0",
+      fontSize: "4vw",
       display: "flex",
-      justifyContent: "space-around",
+      justifyContent: "space-evenly",
       alignItems: "center",
-      background: "rgb(126,241,142)",
-      background: "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)"
+      height: "8vh",
+      width: "100%",
+      borderBottom: "2px solid black"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: undefined
-  }, __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, "Corona Virus Stats"), __jsx("div", {
-    style: {
-      width: "30vw"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
-  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, __jsx("h3", {
-    style: {
-      cursor: "pointer"
-    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: undefined
-  }, "WorldWide Stats")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/countries",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: undefined
   }, __jsx("h3", {
     style: {
       cursor: "pointer"
     },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: undefined
+  }, "World")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/countries",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: undefined
-  }, "Stats by Country")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, __jsx("h3", {
+    style: {
+      cursor: "pointer"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, "Countries")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/states",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: undefined
   }, __jsx("h3", {
@@ -242,10 +177,10 @@ const Header = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: undefined
-  }, "Stats by State")), __jsx("a", {
+  }, "States")), __jsx("a", {
     href: "https://www.github.com/cnr-mtsn/rona",
     style: {
       display: "flex",
@@ -256,14 +191,14 @@ const Header = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: undefined
   }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaGithub"], {
-    size: 32,
+    size: 24,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: undefined
   })));
@@ -290,9 +225,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const Layout = props => {
   return __jsx("div", {
+    style: {
+      background: "rgb(126,241,142)",
+      background: "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)",
+      height: "100vh"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: undefined
   }, props.children);
@@ -408,18 +348,6 @@ function _typeof(obj) {
 }
 
 module.exports = _typeof;
-
-/***/ }),
-
-/***/ "./node_modules/next/app.js":
-/*!**********************************!*\
-  !*** ./node_modules/next/app.js ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./dist/pages/_app */ "./node_modules/next/dist/pages/_app.js")
-
 
 /***/ }),
 
@@ -1977,142 +1905,6 @@ exports.ST = exports.SP && typeof performance.mark === 'function' && typeof perf
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/pages/_app.js":
-/*!**********************************************!*\
-  !*** ./node_modules/next/dist/pages/_app.js ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.Container = Container;
-exports.createUrl = createUrl;
-exports.default = void 0;
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-
-var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "./node_modules/next/dist/next-server/lib/utils.js");
-
-exports.AppInitialProps = _utils.AppInitialProps;
-/**
-* `App` component is used for initialize of pages. It allows for overwriting and full control of the `page` initialization.
-* This allows for keeping state between navigation, custom error handling, injecting additional data.
-*/
-
-async function appGetInitialProps(_ref) {
-  var {
-    Component,
-    ctx
-  } = _ref;
-  var pageProps = await (0, _utils.loadGetInitialProps)(Component, ctx);
-  return {
-    pageProps
-  };
-}
-
-class App extends _react.default.Component {
-  // Kept here for backwards compatibility.
-  // When someone ended App they could call `super.componentDidCatch`.
-  // @deprecated This method is no longer needed. Errors are caught at the top level
-  componentDidCatch(error, _errorInfo) {
-    throw error;
-  }
-
-  render() {
-    var {
-      router,
-      Component,
-      pageProps,
-      __N_SSG,
-      __N_SSP
-    } = this.props;
-    return _react.default.createElement(Component, Object.assign({}, pageProps, // we don't add the legacy URL prop if it's using non-legacy
-    // methods like getStaticProps and getServerSideProps
-    !(__N_SSG || __N_SSP) ? {
-      url: createUrl(router)
-    } : {}));
-  }
-
-}
-
-exports.default = App;
-App.origGetInitialProps = appGetInitialProps;
-App.getInitialProps = appGetInitialProps;
-var warnContainer;
-var warnUrl;
-
-if (true) {
-  warnContainer = (0, _utils.execOnce)(() => {
-    console.warn("Warning: the `Container` in `_app` has been deprecated and should be removed. https://err.sh/zeit/next.js/app-container-deprecated");
-  });
-  warnUrl = (0, _utils.execOnce)(() => {
-    console.error("Warning: the 'url' property is deprecated. https://err.sh/zeit/next.js/url-deprecated");
-  });
-} // @deprecated noop for now until removal
-
-
-function Container(p) {
-  if (true) warnContainer();
-  return p.children;
-}
-
-function createUrl(router) {
-  // This is to make sure we don't references the router object at call time
-  var {
-    pathname,
-    asPath,
-    query
-  } = router;
-  return {
-    get query() {
-      if (true) warnUrl();
-      return query;
-    },
-
-    get pathname() {
-      if (true) warnUrl();
-      return pathname;
-    },
-
-    get asPath() {
-      if (true) warnUrl();
-      return asPath;
-    },
-
-    back: () => {
-      if (true) warnUrl();
-      router.back();
-    },
-    push: (url, as) => {
-      if (true) warnUrl();
-      return router.push(url, as);
-    },
-    pushTo: (href, as) => {
-      if (true) warnUrl();
-      var pushRoute = as ? href : '';
-      var pushUrl = as || href;
-      return router.push(pushRoute, pushUrl);
-    },
-    replace: (url, as) => {
-      if (true) warnUrl();
-      return router.replace(url, as);
-    },
-    replaceTo: (href, as) => {
-      if (true) warnUrl();
-      var replaceRoute = as ? href : '';
-      var replaceUrl = as || href;
-      return router.replace(replaceRoute, replaceUrl);
-    }
-  };
-}
-
-/***/ }),
-
 /***/ "./node_modules/next/link.js":
 /*!***********************************!*\
   !*** ./node_modules/next/link.js ***!
@@ -2136,11 +1928,8 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_styles_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/styles/Layout */ "./components/styles/Layout.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_styles_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/styles/Layout */ "./components/styles/Layout.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
 var _jsxFileName = "/Users/connermatson/Projects/rona/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -2150,37 +1939,29 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
-
-
 function MyApp({
   Component,
   pageProps
 }) {
-  return __jsx(_components_styles_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return __jsx(_components_styles_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 6
     },
     __self: this
-  }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 7
     },
     __self: this
   }), __jsx(Component, _extends({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 8
     },
     __self: this
-  })), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }));
+  })));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (MyApp);

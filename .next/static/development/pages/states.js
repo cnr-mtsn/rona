@@ -44,85 +44,58 @@ var StateStats = function StateStats(_ref) {
     },
     __self: this
   }, "Error...");
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, __jsx("h3", {
+    style: {
+      textAlign: "center"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
-  }, __jsx("h3", {
+  }, stats[num].provinceState), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, "State: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, stats[num].provinceState)), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 22
     },
     __self: this
   }, "Confirmed: ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, stats[num].confirmed))), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }, __jsx("h3", {
+  }, stats[num].confirmed)), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }, "Recovered: ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 27
     },
     __self: this
-  }, stats[num].recovered))), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, "Deaths: ", __jsx("span", {
+  }, stats[num].recovered)), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }, stats[num].deaths))), __jsx("div", {
+  }, "Deaths: ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 31
     },
     __self: this
-  }, __jsx("h3", {
+  }, stats[num].deaths)), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
@@ -134,20 +107,14 @@ var StateStats = function StateStats(_ref) {
       lineNumber: 35
     },
     __self: this
-  }, stats[num].active))), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, __jsx("button", {
+  }, stats[num].active)), __jsx("button", {
     onClick: function onClick() {
       num -= 1;
       setNum(num);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: this
   }, "Last State"), __jsx("button", {
@@ -157,10 +124,10 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 46
     },
     __self: this
-  }, "Next State"))));
+  }, "Next State"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (StateStats);
