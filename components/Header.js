@@ -9,6 +9,7 @@ const Header = props => {
       style={{
         display: "flex",
         justifyContent: "space-around",
+        alignItems: "center",
         background: "rgb(21, 22, 21)",
         background:
           "linear-gradient(90deg, rgba(21, 22, 21, 1) 0%, rgba(137, 69, 187, 1) 100%)",

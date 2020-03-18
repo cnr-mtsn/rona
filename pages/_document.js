@@ -3,8 +3,12 @@ import Document, { Head, Main, NextScript } from "next/document";
 export default class MyDocument extends Document {
   render() {
     return (
-      <html>
-        <Head></Head>
+      <html
+        style={{
+          fontFamily: "monospace",
+        }}
+      >
+        <Head />
         <body>
           <Main />
           <NextScript />

@@ -1068,6 +1068,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
   render() {
     return __jsx("html", {
+      style: {
+        fontFamily: "monospace"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 6
@@ -1076,25 +1079,25 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7
+        lineNumber: 11
       },
       __self: this
     }), __jsx("body", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 8
+        lineNumber: 12
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 13
       },
       __self: this
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 14
       },
       __self: this
     })));

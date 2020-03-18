@@ -8,7 +8,7 @@ const Footer = () => {
         width: "100%",
         background: "black",
         display: "flex",
-        justifyContent: "space-around",
+        justifyContent: "center",
         alignItems: "center",
         position: "fixed",
         bottom: "0",
@@ -16,9 +16,16 @@ const Footer = () => {
         fontSize: "1.1rem",
       }}
     >
-      © 2020{" "}
-      <a href='http://github.com/cnr-mtsn/rona' alt='link to repo'>
-        CNR_MTSN
+      <a
+        style={{
+          margin: "0 auto",
+          color: "white",
+          textDecoration: "none",
+        }}
+        href='http://github.com/cnr-mtsn/rona'
+        alt='link to repo'
+      >
+        © 2020 CNR_MTSN
       </a>
     </footer>
   );
