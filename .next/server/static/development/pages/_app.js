@@ -174,9 +174,8 @@ const Header = props => {
       display: "flex",
       justifyContent: "space-around",
       alignItems: "center",
-      background: "rgb(21, 22, 21)",
-      background: "linear-gradient(90deg, rgba(21, 22, 21, 1) 0%, rgba(137, 69, 187, 1) 100%)",
-      color: "white"
+      background: "rgb(126,241,142)",
+      background: "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)"
     },
     __source: {
       fileName: _jsxFileName,
@@ -186,10 +185,19 @@ const Header = props => {
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, "Corona Virus Stats"), __jsx("div", {
+    style: {
+      width: "30vw"
+    },
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: undefined
-  }, "Corona Virus Stats"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
@@ -197,6 +205,9 @@ const Header = props => {
     },
     __self: undefined
   }, __jsx("h3", {
+    style: {
+      cursor: "pointer"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
@@ -210,6 +221,9 @@ const Header = props => {
     },
     __self: undefined
   }, __jsx("h3", {
+    style: {
+      cursor: "pointer"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
@@ -223,6 +237,9 @@ const Header = props => {
     },
     __self: undefined
   }, __jsx("h3", {
+    style: {
+      cursor: "pointer"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27

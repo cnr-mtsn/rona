@@ -77,15 +77,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var Header = function Header(props) {
-  var _ref;
-
   return __jsx("header", {
-    style: (_ref = {
+    style: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
       display: "flex",
       justifyContent: "space-around",
       alignItems: "center",
-      background: "rgb(21, 22, 21)"
-    }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "background", "linear-gradient(90deg, rgba(21, 22, 21, 1) 0%, rgba(137, 69, 187, 1) 100%)"), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "color", "white"), _ref),
+      background: "rgb(126,241,142)"
+    }, "background", "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -94,10 +92,19 @@ var Header = function Header(props) {
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Corona Virus Stats"), __jsx("div", {
+    style: {
+      width: "30vw"
+    },
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }, "Corona Virus Stats"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
@@ -105,6 +112,9 @@ var Header = function Header(props) {
     },
     __self: this
   }, __jsx("h3", {
+    style: {
+      cursor: "pointer"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
@@ -118,6 +128,9 @@ var Header = function Header(props) {
     },
     __self: this
   }, __jsx("h3", {
+    style: {
+      cursor: "pointer"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
@@ -131,6 +144,9 @@ var Header = function Header(props) {
     },
     __self: this
   }, __jsx("h3", {
+    style: {
+      cursor: "pointer"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27

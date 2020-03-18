@@ -1,4 +1,5 @@
 import Document, { Head, Main, NextScript } from "next/document";
+import { FaFileExcel } from "react-icons/fa";
 
 export default class MyDocument extends Document {
   render() {
@@ -9,7 +10,11 @@ export default class MyDocument extends Document {
         }}
       >
         <Head />
-        <body>
+        <body
+          style={{
+            background: "#f2f2f2",
+          }}
+        >
           <Main />
           <NextScript />
         </body>

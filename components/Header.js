@@ -10,21 +10,21 @@ const Header = props => {
         display: "flex",
         justifyContent: "space-around",
         alignItems: "center",
-        background: "rgb(21, 22, 21)",
+        background: "rgb(126,241,142)",
         background:
-          "linear-gradient(90deg, rgba(21, 22, 21, 1) 0%, rgba(137, 69, 187, 1) 100%)",
-        color: "white",
+          "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)",
       }}
     >
       <h1>Corona Virus Stats</h1>
+      <div style={{ width: "30vw" }}></div>
       <Link href='/'>
-        <h3>WorldWide Stats</h3>
+        <h3 style={{ cursor: "pointer" }}>WorldWide Stats</h3>
       </Link>
       <Link href='/countries'>
-        <h3>Stats by Country</h3>
+        <h3 style={{ cursor: "pointer" }}>Stats by Country</h3>
       </Link>
       <Link href='/states'>
-        <h3>Stats by State</h3>
+        <h3 style={{ cursor: "pointer" }}>Stats by State</h3>
       </Link>
       <a
         href='https://www.github.com/cnr-mtsn/rona'

@@ -23,15 +23,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var Header = function Header(props) {
-  var _ref;
-
   return __jsx("header", {
-    style: (_ref = {
+    style: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
       display: "flex",
       justifyContent: "space-around",
-      alignItem: "center",
-      background: "rgb(21, 22, 21)"
-    }, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "background", "linear-gradient(90deg, rgba(21, 22, 21, 1) 0%, rgba(137, 69, 187, 1) 100%)"), Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, "color", "white"), _ref),
+      alignItems: "center",
+      background: "rgb(126,241,142)"
+    }, "background", "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -40,46 +38,58 @@ var Header = function Header(props) {
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Corona Virus Stats"), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }, "Corona Virus Stats"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, __jsx("h3", {
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
     },
     __self: this
   }, "WorldWide Stats")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/countries",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, "Stats by Country")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/states",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   }, "Stats by State")), __jsx("a", {
@@ -93,14 +103,14 @@ var Header = function Header(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__["FaGithub"], {
     size: 32,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   })));
@@ -111,4 +121,4 @@ var Header = function Header(props) {
 /***/ })
 
 })
-//# sourceMappingURL=_app.js.e1ed6c6f7cdd0f3303f9.hot-update.js.map
+//# sourceMappingURL=_app.js.73f373aa52c4b4b484be.hot-update.js.map
