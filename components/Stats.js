@@ -28,6 +28,7 @@ const Stats = ({ url }) => {
         <tr
           style={{
             outline: "1px solid black",
+            fontSize: "1.5vh",
           }}
         >
           <td
@@ -53,7 +54,7 @@ const Stats = ({ url }) => {
           </td>
           <td>Mortality</td>
         </tr>
-        <tr>
+        <tr style={{ fontSize: "2vh" }}>
           <td>{stats.confirmed.value}</td>
           <td>{stats.recovered.value}</td>
           <td>{stats.deaths.value}</td>

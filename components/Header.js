@@ -19,14 +19,27 @@ const Header = props => {
       }}
     >
       <Link href='/'>
-        <h3 style={{ cursor: "pointer" }}>World</h3>
+        <h3
+          style={{
+            cursor: "pointer",
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+        >
+          World
+        </h3>
       </Link>
+      <span style={{ border: "1px solid black", height: "60%" }}></span>
       <Link href='/countries'>
         <h3 style={{ cursor: "pointer" }}>Countries</h3>
       </Link>
+      <span style={{ border: "1px solid black", height: "60%" }}></span>
       <Link href='/states'>
         <h3 style={{ cursor: "pointer" }}>States</h3>
       </Link>
+      <span style={{ border: "1px solid black", height: "60%" }}></span>
       <a
         href='https://www.github.com/cnr-mtsn/rona'
         style={{

@@ -62,7 +62,8 @@ var Stats = function Stats(_ref) {
     __self: this
   }, __jsx("tr", {
     style: {
-      outline: "1px solid black"
+      outline: "1px solid black",
+      fontSize: "1.5vh"
     },
     __source: {
       fileName: _jsxFileName,
@@ -75,7 +76,7 @@ var Stats = function Stats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, "Confirmed"), __jsx("td", {
@@ -84,7 +85,7 @@ var Stats = function Stats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, "Recovered"), __jsx("td", {
@@ -93,43 +94,46 @@ var Stats = function Stats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, "Deaths"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }, "Mortality")), __jsx("tr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
+    style: {
+      fontSize: "2vh"
     },
-    __self: this
-  }, __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
     },
     __self: this
-  }, stats.confirmed.value), __jsx("td", {
+  }, __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
     },
     __self: this
-  }, stats.recovered.value), __jsx("td", {
+  }, stats.confirmed.value), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
     },
     __self: this
-  }, stats.deaths.value), __jsx("td", {
+  }, stats.recovered.value), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 60
+    },
+    __self: this
+  }, stats.deaths.value), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
     },
     __self: this
   }, mortalityRate, "%"))));

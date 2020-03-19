@@ -13,10 +13,16 @@ export default function CountrySelector() {
   if (error) return <p>Error...</p>;
 
   return (
-    <>
-      <div>
+    <div>
+      <div style={{ textAlign: "center" }}>
         <h4>Select a Country</h4>
         <select
+          style={{
+            width: "60vw",
+            border: "1px solid black",
+            background: "transparent",
+            boxShadow: "2px 2px grey",
+          }}
           onChange={e => {
             setSelectedCountry(e.target.value);
           }}
@@ -32,9 +38,10 @@ export default function CountrySelector() {
           ))}
         </select>
       </div>
+
       <Stats
         url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}
       ></Stats>
-    </>
+    </div>
   );
 }

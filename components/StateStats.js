@@ -10,47 +10,90 @@ const StateStats = ({ url }) => {
   if (error) return <p>Error...</p>;
 
   return (
-    <div>
-      <h3
+    <div
+      style={{
+        padding: "4vw",
+      }}
+    >
+      <table
         style={{
+          width: "90vw",
           textAlign: "center",
         }}
       >
-        {stats[num].provinceState}
-      </h3>
+        <tr
+          style={{
+            outline: "1px solid black",
+            fontSize: "1.5vh",
+          }}
+        >
+          <td
+            style={{
+              borderRight: "1px solid black",
+            }}
+          >
+            Confirmed
+          </td>
+          <td
+            style={{
+              borderRight: "1px solid black",
+            }}
+          >
+            Active
+          </td>
+          <td
+            style={{
+              borderRight: "1px solid black",
+            }}
+          >
+            Recovered
+          </td>
+          <td>Deaths</td>
+        </tr>
+        <tr style={{ fontSize: "2vh" }}>
+          <td>{stats[num].confirmed}</td>
+          <td>{stats[num].active}</td>
+          <td>{stats[num].recovered}</td>
+          <td>{stats[num].deaths}</td>
+        </tr>
+      </table>
 
-      <h3>
-        Confirmed: <span>{stats[num].confirmed}</span>
-      </h3>
-
-      <h3>
-        Recovered: <span>{stats[num].recovered}</span>
-      </h3>
-
-      <h3>
-        Deaths: <span>{stats[num].deaths}</span>
-      </h3>
-
-      <h3>
-        Active: <span>{stats[num].active}</span>
-      </h3>
-
-      <button
-        onClick={() => {
-          num -= 1;
-          setNum(num);
+      <div
+        style={{
+          marginTop: "3vh",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-        Last State
-      </button>
-      <button
-        onClick={() => {
-          num += 1;
-          setNum(num);
-        }}
-      >
-        Next State
-      </button>
+        <button
+          onClick={() => {
+            num -= 1;
+            setNum(num);
+          }}
+          style={{
+            border: "1px solid black",
+            background: "transparent",
+            margin: "1vw",
+            borderRadius: "5px",
+          }}
+        >
+          Last State
+        </button>
+        <button
+          onClick={() => {
+            num += 1;
+            setNum(num);
+          }}
+          style={{
+            border: "1px solid black",
+            background: "transparent",
+            margin: "1vw",
+            borderRadius: "5px",
+          }}
+        >
+          Next State
+        </button>
+      </div>
     </div>
   );
 };

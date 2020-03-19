@@ -47,18 +47,32 @@ var Header = function Header(props) {
     __self: this
   }, __jsx("h3", {
     style: {
-      cursor: "pointer"
+      cursor: "pointer",
+      height: "100%",
+      display: "flex",
+      alignItems: "center",
+      textAlign: "center"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
-  }, "World")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "World")), __jsx("span", {
+    style: {
+      border: "1px solid black",
+      height: "60%"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/countries",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 35
     },
     __self: this
   }, __jsx("h3", {
@@ -67,14 +81,24 @@ var Header = function Header(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 36
     },
     __self: this
-  }, "Countries")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Countries")), __jsx("span", {
+    style: {
+      border: "1px solid black",
+      height: "60%"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/states",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 39
     },
     __self: this
   }, __jsx("h3", {
@@ -83,10 +107,20 @@ var Header = function Header(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 40
     },
     __self: this
-  }, "States")), __jsx("a", {
+  }, "States")), __jsx("span", {
+    style: {
+      border: "1px solid black",
+      height: "60%"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }), __jsx("a", {
     href: "https://www.github.com/cnr-mtsn/rona",
     style: {
       display: "flex",
@@ -97,14 +131,14 @@ var Header = function Header(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 43
     },
     __self: this
   }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaGithub"], {
     size: 24,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 53
     },
     __self: this
   })));

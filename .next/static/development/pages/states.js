@@ -45,76 +45,125 @@ var StateStats = function StateStats(_ref) {
     __self: this
   }, "Error...");
   return __jsx("div", {
+    style: {
+      padding: "4vw"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
-  }, __jsx("h3", {
+  }, __jsx("table", {
     style: {
+      width: "90vw",
       textAlign: "center"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 18
     },
     __self: this
-  }, stats[num].provinceState), __jsx("h3", {
+  }, __jsx("tr", {
+    style: {
+      outline: "1px solid black",
+      fontSize: "1.5vh"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
-  }, "Confirmed: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
+  }, __jsx("td", {
+    style: {
+      borderRight: "1px solid black"
     },
-    __self: this
-  }, stats[num].confirmed)), __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, "Recovered: ", __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, stats[num].recovered)), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }, "Deaths: ", __jsx("span", {
+  }, "Confirmed"), __jsx("td", {
+    style: {
+      borderRight: "1px solid black"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 37
     },
     __self: this
-  }, stats[num].deaths)), __jsx("h3", {
+  }, "Active"), __jsx("td", {
+    style: {
+      borderRight: "1px solid black"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 44
     },
     __self: this
-  }, "Active: ", __jsx("span", {
+  }, "Recovered"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 51
     },
     __self: this
-  }, stats[num].active)), __jsx("button", {
+  }, "Deaths")), __jsx("tr", {
+    style: {
+      fontSize: "2vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, stats[num].confirmed), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, stats[num].active), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, stats[num].recovered), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, stats[num].deaths))), __jsx("div", {
+    style: {
+      marginTop: "3vh",
+      display: "flex",
+      justifyContent: "center"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, __jsx("button", {
     onClick: function onClick() {
       num -= 1;
       setNum(num);
     },
+    style: {
+      border: "1px solid black",
+      background: "transparent",
+      margin: "1vw",
+      borderRadius: "5px"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 68
     },
     __self: this
   }, "Last State"), __jsx("button", {
@@ -122,12 +171,18 @@ var StateStats = function StateStats(_ref) {
       num += 1;
       setNum(num);
     },
+    style: {
+      border: "1px solid black",
+      background: "transparent",
+      margin: "1vw",
+      borderRadius: "5px"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 82
     },
     __self: this
-  }, "Next State"));
+  }, "Next State")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (StateStats);

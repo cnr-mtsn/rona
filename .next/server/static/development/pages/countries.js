@@ -144,7 +144,16 @@ function CountrySelector() {
     },
     __self: this
   }, "Error...");
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx("div", {
+    style: {
+      textAlign: "center"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -157,6 +166,12 @@ function CountrySelector() {
     },
     __self: this
   }, "Select a Country"), __jsx("select", {
+    style: {
+      width: "60vw",
+      border: "1px solid black",
+      background: "transparent",
+      boxShadow: "2px 2px grey"
+    },
     onChange: e => {
       setSelectedCountry(e.target.value);
     },
@@ -171,14 +186,14 @@ function CountrySelector() {
     value: countries.iso3[code],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 31
     },
     __self: this
   }, country)))), __jsx(_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
     url: `https://covid19.mathdro.id/api/countries/${selectedCountry}`,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 42
     },
     __self: this
   }));
@@ -248,7 +263,8 @@ const Stats = ({
     __self: undefined
   }, __jsx("tr", {
     style: {
-      outline: "1px solid black"
+      outline: "1px solid black",
+      fontSize: "1.5vh"
     },
     __source: {
       fileName: _jsxFileName,
@@ -261,7 +277,7 @@ const Stats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: undefined
   }, "Confirmed"), __jsx("td", {
@@ -270,7 +286,7 @@ const Stats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: undefined
   }, "Recovered"), __jsx("td", {
@@ -279,43 +295,46 @@ const Stats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: undefined
   }, "Deaths"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: undefined
   }, "Mortality")), __jsx("tr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
+    style: {
+      fontSize: "2vh"
     },
-    __self: undefined
-  }, __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
     },
     __self: undefined
-  }, stats.confirmed.value), __jsx("td", {
+  }, __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
     },
     __self: undefined
-  }, stats.recovered.value), __jsx("td", {
+  }, stats.confirmed.value), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
     },
     __self: undefined
-  }, stats.deaths.value), __jsx("td", {
+  }, stats.recovered.value), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 60
+    },
+    __self: undefined
+  }, stats.deaths.value), __jsx("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
     },
     __self: undefined
   }, mortalityRate, "%"))));
