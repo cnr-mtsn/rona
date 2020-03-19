@@ -28,7 +28,7 @@ const Stats = ({ url }) => {
         <tr
           style={{
             outline: "1px solid black",
-            fontSize: "1.5vh",
+            fontSize: "2vh",
           }}
         >
           <td

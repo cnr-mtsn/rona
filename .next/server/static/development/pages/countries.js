@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -264,7 +264,7 @@ const Stats = ({
   }, __jsx("tr", {
     style: {
       outline: "1px solid black",
-      fontSize: "1.5vh"
+      fontSize: "2vh"
     },
     __source: {
       fileName: _jsxFileName,
@@ -424,7 +424,7 @@ const states = () => {
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!**********************************!*\
   !*** multi ./pages/countries.js ***!
   \**********************************/

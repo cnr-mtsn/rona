@@ -179,7 +179,7 @@ var Stats = function Stats(_ref) {
   }, __jsx("tr", {
     style: {
       outline: "1px solid black",
-      fontSize: "1.5vh"
+      fontSize: "2vh"
     },
     __source: {
       fileName: _jsxFileName,
@@ -1244,7 +1244,7 @@ var states = function states() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcountries&absolutePagePath=%2FUsers%2Fconnermatson%2FProjects%2Frona%2Fpages%2Fcountries.js ***!
   \******************************************************************************************************************************************/
@@ -1267,5 +1267,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=countries.js.map

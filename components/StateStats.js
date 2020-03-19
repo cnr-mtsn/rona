@@ -15,6 +15,14 @@ const StateStats = ({ url }) => {
         padding: "4vw",
       }}
     >
+      <h4
+        style={{
+          fontSize: "3vh",
+          textAlign: "center",
+        }}
+      >
+        {stats[num].provinceState}
+      </h4>
       <table
         style={{
           width: "90vw",
@@ -24,7 +32,7 @@ const StateStats = ({ url }) => {
         <tr
           style={{
             outline: "1px solid black",
-            fontSize: "1.5vh",
+            fontSize: "2vh",
           }}
         >
           <td

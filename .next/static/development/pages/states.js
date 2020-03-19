@@ -53,9 +53,9 @@ var StateStats = function StateStats(_ref) {
       lineNumber: 13
     },
     __self: this
-  }, __jsx("table", {
+  }, __jsx("h4", {
     style: {
-      width: "90vw",
+      fontSize: "3vh",
       textAlign: "center"
     },
     __source: {
@@ -63,14 +63,24 @@ var StateStats = function StateStats(_ref) {
       lineNumber: 18
     },
     __self: this
-  }, __jsx("tr", {
+  }, stats[num].provinceState), __jsx("table", {
     style: {
-      outline: "1px solid black",
-      fontSize: "1.5vh"
+      width: "90vw",
+      textAlign: "center"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("tr", {
+    style: {
+      outline: "1px solid black",
+      fontSize: "2vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
     },
     __self: this
   }, __jsx("td", {
@@ -79,7 +89,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 38
     },
     __self: this
   }, "Confirmed"), __jsx("td", {
@@ -88,7 +98,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 45
     },
     __self: this
   }, "Active"), __jsx("td", {
@@ -97,13 +107,13 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 52
     },
     __self: this
   }, "Recovered"), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 59
     },
     __self: this
   }, "Deaths")), __jsx("tr", {
@@ -112,31 +122,31 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 61
     },
     __self: this
   }, __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 62
     },
     __self: this
   }, stats[num].confirmed), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 63
     },
     __self: this
   }, stats[num].active), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 64
     },
     __self: this
   }, stats[num].recovered), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 65
     },
     __self: this
   }, stats[num].deaths))), __jsx("div", {
@@ -147,7 +157,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 69
     },
     __self: this
   }, __jsx("button", {
@@ -163,7 +173,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 76
     },
     __self: this
   }, "Last State"), __jsx("button", {
@@ -179,7 +189,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 90
     },
     __self: this
   }, "Next State")));
@@ -1079,7 +1089,7 @@ var states = function states() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fstates&absolutePagePath=%2FUsers%2Fconnermatson%2FProjects%2Frona%2Fpages%2Fstates.js ***!
   \************************************************************************************************************************************/
@@ -1102,5 +1112,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=states.js.map

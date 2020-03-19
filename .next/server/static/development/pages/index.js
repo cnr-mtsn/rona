@@ -156,7 +156,7 @@ const Stats = ({
   }, __jsx("tr", {
     style: {
       outline: "1px solid black",
-      fontSize: "1.5vh"
+      fontSize: "2vh"
     },
     __source: {
       fileName: _jsxFileName,
