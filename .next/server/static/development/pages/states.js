@@ -88,10 +88,147 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/StateBlock.js":
+/*!**********************************!*\
+  !*** ./components/StateBlock.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/formatNumber */ "./lib/formatNumber.js");
+var _jsxFileName = "/Users/connermatson/Projects/rona/components/StateBlock.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const StateBlock = ({
+  state
+}) => {
+  console.log(state);
+  return __jsx("div", {
+    style: {
+      width: "40vw",
+      height: "35vh",
+      border: "1px solid black",
+      borderRadius: "10%",
+      boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, __jsx("h3", {
+    style: {
+      textAlign: "center",
+      margin: "1vh 0 1vh 0",
+      fontSize: "1.25rem",
+      height: "4vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, state.provinceState), __jsx("div", {
+    style: {
+      height: "1vh",
+      borderTop: "1px solid black",
+      width: "40vw"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  }), __jsx("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      height: "25vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: undefined
+  }, __jsx("p", {
+    style: {
+      fontSize: "1.2rem"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: undefined
+  }, "Confirmed: ", __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: undefined
+  }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__["default"])(state.confirmed))), __jsx("p", {
+    style: {
+      fontSize: "1.2rem"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: undefined
+  }, "Active: ", __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: undefined
+  }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__["default"])(state.active))), __jsx("p", {
+    style: {
+      fontSize: "1.2rem"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, "Recovered: ", __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: undefined
+  }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__["default"])(state.recovered))), __jsx("p", {
+    style: {
+      fontSize: "1.2rem"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: undefined
+  }, "Deaths: ", __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: undefined
+  }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__["default"])(state.deaths)))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (StateBlock);
+
+/***/ }),
 
 /***/ "./components/StateStats.js":
 /*!**********************************!*\
@@ -105,8 +242,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_useStats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/useStats */ "./lib/useStats.js");
+/* harmony import */ var _StateBlock__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StateBlock */ "./components/StateBlock.js");
 var _jsxFileName = "/Users/connermatson/Projects/rona/components/StateStats.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -118,177 +257,64 @@ const StateStats = ({
     loading,
     error
   } = Object(_lib_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])(url);
-  let {
-    0: num,
-    1: setNum
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-  console.log(stats, loading, error);
   if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: undefined
   }, "Loading....");
   if (error) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: undefined
   }, "Error...");
+  console.log(stats);
   return __jsx("div", {
     style: {
-      padding: "4vw"
+      display: "grid",
+      gridTemplateColumns: "repeat(2, 1fr)",
+      gridGap: "2rem",
+      margin: "5vh 0 5vh 0",
+      padding: "1rem",
+      justifyItems: "center",
+      overflowY: "scroll"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: undefined
-  }, __jsx("h4", {
-    style: {
-      fontSize: "3vh",
-      textAlign: "center"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, stats[num].provinceState), __jsx("table", {
-    style: {
-      width: "90vw",
-      textAlign: "center"
-    },
+  }, stats.map(state => __jsx(_StateBlock__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    state: state,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: undefined
-  }, __jsx("tr", {
-    style: {
-      outline: "1px solid black",
-      fontSize: "2vh"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: undefined
-  }, __jsx("td", {
-    style: {
-      borderRight: "1px solid black"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: undefined
-  }, "Confirmed"), __jsx("td", {
-    style: {
-      borderRight: "1px solid black"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: undefined
-  }, "Active"), __jsx("td", {
-    style: {
-      borderRight: "1px solid black"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: undefined
-  }, "Recovered"), __jsx("td", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: undefined
-  }, "Deaths")), __jsx("tr", {
-    style: {
-      fontSize: "2vh"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: undefined
-  }, __jsx("td", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: undefined
-  }, stats[num].confirmed), __jsx("td", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: undefined
-  }, stats[num].active), __jsx("td", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: undefined
-  }, stats[num].recovered), __jsx("td", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: undefined
-  }, stats[num].deaths))), __jsx("div", {
-    style: {
-      marginTop: "3vh",
-      display: "flex",
-      justifyContent: "center"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: undefined
-  }, __jsx("button", {
-    onClick: () => {
-      num -= 1;
-      setNum(num);
-    },
-    style: {
-      border: "1px solid black",
-      background: "transparent",
-      margin: "1vw",
-      borderRadius: "5px"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: undefined
-  }, "Last State"), __jsx("button", {
-    onClick: () => {
-      num += 1;
-      setNum(num);
-    },
-    style: {
-      border: "1px solid black",
-      background: "transparent",
-      margin: "1vw",
-      borderRadius: "5px"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90
-    },
-    __self: undefined
-  }, "Next State")));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (StateStats);
+
+/***/ }),
+
+/***/ "./lib/formatNumber.js":
+/*!*****************************!*\
+  !*** ./lib/formatNumber.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function formatNumber(num) {
+  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (formatNumber);
 
 /***/ }),
 
@@ -373,7 +399,7 @@ const states = () => {
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!*******************************!*\
   !*** multi ./pages/states.js ***!
   \*******************************/

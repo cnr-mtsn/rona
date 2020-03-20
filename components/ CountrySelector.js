@@ -14,14 +14,15 @@ export default function CountrySelector() {
 
   return (
     <div>
-      <div style={{ textAlign: "center" }}>
-        <h4>Select a Country</h4>
+      <div style={{ textAlign: "center", margin: "0" }}>
+        <h1>Select a Country</h1>
         <select
           style={{
             width: "60vw",
             border: "1px solid black",
             background: "transparent",
             boxShadow: "2px 2px grey",
+            fontSize: "20px",
           }}
           onChange={e => {
             setSelectedCountry(e.target.value);

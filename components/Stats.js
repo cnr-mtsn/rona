@@ -1,9 +1,9 @@
 import React from "react";
 import useStats from "../lib/useStats";
+import formatNumber from "../lib/formatNumber";
 
 const Stats = ({ url }) => {
   const { stats, loading, error } = useStats(url);
-  console.log(stats, loading, error);
 
   if (loading) return <p>Loading....</p>;
   if (error) return <p>Error...</p>;
@@ -16,51 +16,93 @@ const Stats = ({ url }) => {
   return (
     <div
       style={{
-        padding: "4vw",
+        display: "flex",
+        flexDirection: "column",
+        marginTop: "5vh",
       }}
     >
-      <table
+      <div
         style={{
-          width: "90vw",
           textAlign: "center",
+          height: "15vh",
+          width: "100vw",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
         }}
       >
-        <tr
+        <h1>Confirmed</h1>
+        <h2>{formatNumber(stats.confirmed.value)}</h2>
+        <div
           style={{
-            outline: "1px solid black",
-            fontSize: "2vh",
+            height: ".5px",
+            borderTop: "1px solid black",
+            width: "50%",
+            margin: "0 25vw 0 25vw",
           }}
-        >
-          <td
-            style={{
-              borderRight: "1px solid black",
-            }}
-          >
-            Confirmed
-          </td>
-          <td
-            style={{
-              borderRight: "1px solid black",
-            }}
-          >
-            Recovered
-          </td>
-          <td
-            style={{
-              borderRight: "1px solid black",
-            }}
-          >
-            Deaths
-          </td>
-          <td>Mortality</td>
-        </tr>
-        <tr style={{ fontSize: "2vh" }}>
-          <td>{stats.confirmed.value}</td>
-          <td>{stats.recovered.value}</td>
-          <td>{stats.deaths.value}</td>
-          <td>{mortalityRate}%</td>
-        </tr>
-      </table>
+        ></div>
+      </div>
+
+      <div
+        style={{
+          textAlign: "center",
+          height: "15vh",
+
+          width: "100vw",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <h1>Recovered</h1>
+        <h2>{formatNumber(stats.recovered.value)}</h2>
+        <div
+          style={{
+            height: ".5px",
+            borderTop: "1px solid black",
+            width: "50%",
+            margin: "0 25vw 0 25vw",
+          }}
+        ></div>
+      </div>
+
+      <div
+        style={{
+          textAlign: "center",
+          height: "15vh",
+
+          width: "100vw",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <h1>Deaths</h1>
+        <h2>{formatNumber(stats.deaths.value)}</h2>
+        <div
+          style={{
+            height: ".5px",
+            borderTop: "1px solid black",
+            width: "50%",
+            margin: "0 25vw 0 25vw",
+          }}
+        ></div>
+      </div>
+
+      <div
+        style={{
+          textAlign: "center",
+          height: "15vh",
+
+          width: "100vw",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <h1>Mortality</h1>
+        <h2>{mortalityRate}%</h2>
+      </div>
     </div>
   );
 };

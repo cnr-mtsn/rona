@@ -1,107 +1,30 @@
 import React, { useState } from "react";
 import useStats from "../lib/useStats";
+import StateBlock from "./StateBlock";
 
 const StateStats = ({ url }) => {
   const { stats, loading, error } = useStats(url);
-  let [num, setNum] = useState(0);
-  console.log(stats, loading, error);
 
   if (loading) return <p>Loading....</p>;
   if (error) return <p>Error...</p>;
 
+  console.log(stats);
+
   return (
     <div
       style={{
-        padding: "4vw",
+        display: "grid",
+        gridTemplateColumns: "repeat(2, 1fr)",
+        gridGap: "2rem",
+        margin: "5vh 0 5vh 0",
+        padding: "1rem",
+        justifyItems: "center",
+        overflowY: "scroll",
       }}
     >
-      <h4
-        style={{
-          fontSize: "3vh",
-          textAlign: "center",
-        }}
-      >
-        {stats[num].provinceState}
-      </h4>
-      <table
-        style={{
-          width: "90vw",
-          textAlign: "center",
-        }}
-      >
-        <tr
-          style={{
-            outline: "1px solid black",
-            fontSize: "2vh",
-          }}
-        >
-          <td
-            style={{
-              borderRight: "1px solid black",
-            }}
-          >
-            Confirmed
-          </td>
-          <td
-            style={{
-              borderRight: "1px solid black",
-            }}
-          >
-            Active
-          </td>
-          <td
-            style={{
-              borderRight: "1px solid black",
-            }}
-          >
-            Recovered
-          </td>
-          <td>Deaths</td>
-        </tr>
-        <tr style={{ fontSize: "2vh" }}>
-          <td>{stats[num].confirmed}</td>
-          <td>{stats[num].active}</td>
-          <td>{stats[num].recovered}</td>
-          <td>{stats[num].deaths}</td>
-        </tr>
-      </table>
-
-      <div
-        style={{
-          marginTop: "3vh",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <button
-          onClick={() => {
-            num -= 1;
-            setNum(num);
-          }}
-          style={{
-            border: "1px solid black",
-            background: "transparent",
-            margin: "1vw",
-            borderRadius: "5px",
-          }}
-        >
-          Last State
-        </button>
-        <button
-          onClick={() => {
-            num += 1;
-            setNum(num);
-          }}
-          style={{
-            border: "1px solid black",
-            background: "transparent",
-            margin: "1vw",
-            borderRadius: "5px",
-          }}
-        >
-          Next State
-        </button>
-      </div>
+      {stats.map(state => (
+        <StateBlock state={state} />
+      ))}
     </div>
   );
 };

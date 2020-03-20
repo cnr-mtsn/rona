@@ -93,6 +93,64 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/Footer.js":
+/*!******************************!*\
+  !*** ./components/Footer.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/connermatson/Projects/rona/components/Footer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Footer = () => {
+  return __jsx("footer", {
+    style: {
+      fontSize: "1.5rem",
+      bottom: "0",
+      position: "fixed",
+      height: "6vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100%",
+      background: "black"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: undefined
+  }, __jsx("a", {
+    style: {
+      color: "lightgrey",
+      fontWeight: "lighter",
+      textDecoration: "none"
+    },
+    href: "https://github.com/cnr-mtsn/rona",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, __jsx("code", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, "<cnr_mtsn/>")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -119,13 +177,17 @@ const Header = props => {
     style: {
       margin: "0",
       padding: "0",
-      fontSize: "4vw",
+      fontSize: "1.2rem",
       display: "flex",
+      top: "0",
+      position: "sticky",
       justifyContent: "space-evenly",
       alignItems: "center",
-      height: "8vh",
+      height: "10vh",
       width: "100%",
-      borderBottom: "2px solid black"
+      borderBottom: "2px solid black",
+      background: "rgb(126,241,142)",
+      background: "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)"
     },
     __source: {
       fileName: _jsxFileName,
@@ -136,10 +198,10 @@ const Header = props => {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 26
     },
     __self: undefined
-  }, __jsx("h3", {
+  }, __jsx("h2", {
     style: {
       cursor: "pointer",
       height: "100%",
@@ -149,7 +211,7 @@ const Header = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 27
     },
     __self: undefined
   }, "World")), __jsx("span", {
@@ -159,23 +221,23 @@ const Header = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 39
     },
     __self: undefined
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/countries",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 40
     },
     __self: undefined
-  }, __jsx("h3", {
+  }, __jsx("h2", {
     style: {
       cursor: "pointer"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 41
     },
     __self: undefined
   }, "Countries")), __jsx("span", {
@@ -185,23 +247,23 @@ const Header = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 43
     },
     __self: undefined
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/states",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: undefined
-  }, __jsx("h3", {
+  }, __jsx("h2", {
     style: {
       cursor: "pointer"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 45
     },
     __self: undefined
   }, "States")), __jsx("span", {
@@ -211,7 +273,7 @@ const Header = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 47
     },
     __self: undefined
   }), __jsx("a", {
@@ -219,20 +281,19 @@ const Header = props => {
     style: {
       display: "flex",
       justifyContent: "flex-start",
-      marginLeft: "20px",
       color: "black",
       alignItems: "center"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 48
     },
     __self: undefined
   }, __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaGithub"], {
-    size: 24,
+    size: 40,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 57
     },
     __self: undefined
   })));
@@ -262,7 +323,10 @@ const Layout = props => {
     style: {
       background: "rgb(126,241,142)",
       background: "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)",
-      height: "100vh"
+      backgroundSize: "cover",
+      minHeight: "100vh",
+      margin: "-10px",
+      padding: "0"
     },
     __source: {
       fileName: _jsxFileName,
@@ -1964,11 +2028,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_styles_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/styles/Layout */ "./components/styles/Layout.js");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
 var _jsxFileName = "/Users/connermatson/Projects/rona/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 
 
 
@@ -1980,22 +2046,28 @@ function MyApp({
   return __jsx(_components_styles_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }), __jsx(Component, _extends({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
-  })));
+  })), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (MyApp);

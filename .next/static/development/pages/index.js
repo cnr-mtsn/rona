@@ -12,8 +12,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_useStats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/useStats */ "./lib/useStats.js");
+/* harmony import */ var _lib_formatNumber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/formatNumber */ "./lib/formatNumber.js");
 var _jsxFileName = "/Users/connermatson/Projects/rona/components/Stats.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -25,7 +27,6 @@ var Stats = function Stats(_ref) {
       loading = _useStats.loading,
       error = _useStats.error;
 
-  console.log(stats, loading, error);
   if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
@@ -43,100 +44,156 @@ var Stats = function Stats(_ref) {
   var mortalityRate = (100 / stats.confirmed.value * stats.deaths.value).toFixed(2);
   return __jsx("div", {
     style: {
-      padding: "4vw"
+      display: "flex",
+      flexDirection: "column",
+      marginTop: "5vh"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  }, __jsx("table", {
+  }, __jsx("div", {
     style: {
-      width: "90vw",
-      textAlign: "center"
+      textAlign: "center",
+      height: "15vh",
+      width: "100vw",
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
-  }, __jsx("tr", {
-    style: {
-      outline: "1px solid black",
-      fontSize: "2vh"
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, __jsx("td", {
-    style: {
-      borderRight: "1px solid black"
-    },
+  }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     },
     __self: this
-  }, "Confirmed"), __jsx("td", {
+  }, "Confirmed"), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_2__["default"])(stats.confirmed.value)), __jsx("div", {
     style: {
-      borderRight: "1px solid black"
+      height: ".5px",
+      borderTop: "1px solid black",
+      width: "50%",
+      margin: "0 25vw 0 25vw"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 36
     },
     __self: this
-  }, "Recovered"), __jsx("td", {
+  })), __jsx("div", {
     style: {
-      borderRight: "1px solid black"
+      textAlign: "center",
+      height: "15vh",
+      width: "100vw",
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 46
     },
     __self: this
-  }, "Deaths"), __jsx("td", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: this
-  }, "Mortality")), __jsx("tr", {
-    style: {
-      fontSize: "2vh"
-    },
+  }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
     },
     __self: this
-  }, __jsx("td", {
+  }, "Recovered"), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
     },
     __self: this
-  }, stats.confirmed.value), __jsx("td", {
+  }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_2__["default"])(stats.recovered.value)), __jsx("div", {
+    style: {
+      height: ".5px",
+      borderTop: "1px solid black",
+      width: "50%",
+      margin: "0 25vw 0 25vw"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
     },
     __self: this
-  }, stats.recovered.value), __jsx("td", {
+  })), __jsx("div", {
+    style: {
+      textAlign: "center",
+      height: "15vh",
+      width: "100vw",
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column"
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 69
     },
     __self: this
-  }, stats.deaths.value), __jsx("td", {
+  }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 80
     },
     __self: this
-  }, mortalityRate, "%"))));
+  }, "Deaths"), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
+    },
+    __self: this
+  }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_2__["default"])(stats.deaths.value)), __jsx("div", {
+    style: {
+      height: ".5px",
+      borderTop: "1px solid black",
+      width: "50%",
+      margin: "0 25vw 0 25vw"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: this
+  })), __jsx("div", {
+    style: {
+      textAlign: "center",
+      height: "15vh",
+      width: "100vw",
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: this
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103
+    },
+    __self: this
+  }, "Mortality"), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 104
+    },
+    __self: this
+  }, mortalityRate, "%")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Stats);
@@ -172,6 +229,23 @@ var WorldStats = function WorldStats() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (WorldStats);
+
+/***/ }),
+
+/***/ "./lib/formatNumber.js":
+/*!*****************************!*\
+  !*** ./lib/formatNumber.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function formatNumber(num) {
+  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (formatNumber);
 
 /***/ }),
 

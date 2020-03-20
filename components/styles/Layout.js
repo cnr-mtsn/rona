@@ -7,7 +7,10 @@ const Layout = props => {
         background: "rgb(126,241,142)",
         background:
           "linear-gradient(90deg, rgba(126,241,142,1) 0%, rgba(0,255,246,1) 100%)",
-        height: "100vh",
+        backgroundSize: "cover",
+        minHeight: "100vh",
+        margin: "-10px",
+        padding: "0",
       }}
     >
       {props.children}
