@@ -205,8 +205,8 @@ var StateStats = function StateStats(_ref) {
     __self: this
   }, __jsx("span", {
     style: {
-      margin: "0 2vw 0 0",
-      fontSize: "3vh"
+      margin: "2vh 2vw 0 0",
+      fontSize: "2vh"
     },
     __source: {
       fileName: _jsxFileName,
@@ -215,7 +215,7 @@ var StateStats = function StateStats(_ref) {
     __self: this
   }, "Select a state:"), __jsx("select", {
     style: {
-      width: "20vw",
+      width: "40vw",
       border: "1px solid black",
       background: "transparent",
       boxShadow: "2px 2px grey",
@@ -242,7 +242,9 @@ var StateStats = function StateStats(_ref) {
   }))), __jsx("div", {
     style: {
       display: "flex",
+      flexDirection: "column",
       justifyContent: "center",
+      alignItems: "center",
       marginTop: "5vh"
     },
     __source: {
@@ -250,26 +252,24 @@ var StateStats = function StateStats(_ref) {
       lineNumber: 59
     },
     __self: this
-  }, __jsx("p", {
-    style: {
-      fontSize: "3vh"
-    },
+  }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 68
     },
     __self: this
-  }, "Now viewing counties in:", " ", __jsx("span", {
+  }, "Now viewing counties in:"), __jsx("span", {
     style: {
       fontWeight: "bold",
-      fontSize: "4vh"
+      fontSize: "3vh",
+      marginLeft: "2vw"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 69
     },
     __self: this
-  }, selectedState.toUpperCase()))), __jsx("div", {
+  }, selectedState.toUpperCase())), __jsx("div", {
     style: {
       display: "grid",
       gridTemplateColumns: "repeat(2, 1fr)",
@@ -281,7 +281,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 76
     },
     __self: this
   }, stats.map(function (state) {
@@ -289,7 +289,7 @@ var StateStats = function StateStats(_ref) {
       state: state,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91
+        lineNumber: 89
       },
       __self: this
     }) : null;
@@ -1207,7 +1207,7 @@ var states = function states() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fstates&absolutePagePath=%2FUsers%2Fconnermatson%2FProjects%2Frona%2Fpages%2Fstates.js ***!
   \************************************************************************************************************************************/
@@ -1230,5 +1230,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=states.js.map

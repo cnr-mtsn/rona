@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -299,8 +299,8 @@ const StateStats = ({
     __self: undefined
   }, __jsx("span", {
     style: {
-      margin: "0 2vw 0 0",
-      fontSize: "3vh"
+      margin: "2vh 2vw 0 0",
+      fontSize: "2vh"
     },
     __source: {
       fileName: _jsxFileName,
@@ -309,7 +309,7 @@ const StateStats = ({
     __self: undefined
   }, "Select a state:"), __jsx("select", {
     style: {
-      width: "20vw",
+      width: "40vw",
       border: "1px solid black",
       background: "transparent",
       boxShadow: "2px 2px grey",
@@ -334,7 +334,9 @@ const StateStats = ({
   }, state)))), __jsx("div", {
     style: {
       display: "flex",
+      flexDirection: "column",
       justifyContent: "center",
+      alignItems: "center",
       marginTop: "5vh"
     },
     __source: {
@@ -342,26 +344,24 @@ const StateStats = ({
       lineNumber: 59
     },
     __self: undefined
-  }, __jsx("p", {
-    style: {
-      fontSize: "3vh"
-    },
+  }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 68
     },
     __self: undefined
-  }, "Now viewing counties in:", " ", __jsx("span", {
+  }, "Now viewing counties in:"), __jsx("span", {
     style: {
       fontWeight: "bold",
-      fontSize: "4vh"
+      fontSize: "3vh",
+      marginLeft: "2vw"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 69
     },
     __self: undefined
-  }, selectedState.toUpperCase()))), __jsx("div", {
+  }, selectedState.toUpperCase())), __jsx("div", {
     style: {
       display: "grid",
       gridTemplateColumns: "repeat(2, 1fr)",
@@ -373,14 +373,14 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 76
     },
     __self: undefined
   }, stats.map(state => state.provinceState === selectedState ? __jsx(_StateBlock__WEBPACK_IMPORTED_MODULE_2__["default"], {
     state: state,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 89
     },
     __self: undefined
   }) : null)));
@@ -488,7 +488,7 @@ const states = () => {
 
 /***/ }),
 
-/***/ 7:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/states.js ***!
   \*******************************/

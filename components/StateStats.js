@@ -31,15 +31,15 @@ const StateStats = ({ url }) => {
       >
         <span
           style={{
-            margin: "0 2vw 0 0",
-            fontSize: "3vh",
+            margin: "2vh 2vw 0 0",
+            fontSize: "2vh",
           }}
         >
           Select a state:
         </span>
         <select
           style={{
-            width: "20vw",
+            width: "40vw",
             border: "1px solid black",
             background: "transparent",
             boxShadow: "2px 2px grey",
@@ -59,20 +59,18 @@ const StateStats = ({ url }) => {
       <div
         style={{
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
+          alignItems: "center",
           marginTop: "5vh",
         }}
       >
-        <p
-          style={{
-            fontSize: "3vh",
-          }}
+        <span>Now viewing counties in:</span>
+        <span
+          style={{ fontWeight: "bold", fontSize: "3vh", marginLeft: "2vw" }}
         >
-          Now viewing counties in:{" "}
-          <span style={{ fontWeight: "bold", fontSize: "4vh" }}>
-            {selectedState.toUpperCase()}
-          </span>
-        </p>
+          {selectedState.toUpperCase()}
+        </span>
       </div>
 
       <div
