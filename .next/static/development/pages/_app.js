@@ -132,7 +132,7 @@ var Header = function Header(props) {
     },
     __self: this
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/countries",
+    href: "/usa",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
@@ -147,7 +147,7 @@ var Header = function Header(props) {
       lineNumber: 41
     },
     __self: this
-  }, "Countries")), __jsx("span", {
+  }, "USA")), __jsx("span", {
     style: {
       border: "1px solid black",
       height: "60%"
@@ -173,7 +173,7 @@ var Header = function Header(props) {
       lineNumber: 45
     },
     __self: this
-  }, "States")), __jsx("span", {
+  }, "County/State")), __jsx("span", {
     style: {
       border: "1px solid black",
       height: "60%"

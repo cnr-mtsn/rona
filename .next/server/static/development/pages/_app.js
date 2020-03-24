@@ -225,7 +225,7 @@ const Header = props => {
     },
     __self: undefined
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/countries",
+    href: "/usa",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
@@ -240,7 +240,7 @@ const Header = props => {
       lineNumber: 41
     },
     __self: undefined
-  }, "Countries")), __jsx("span", {
+  }, "USA")), __jsx("span", {
     style: {
       border: "1px solid black",
       height: "60%"
@@ -266,7 +266,7 @@ const Header = props => {
       lineNumber: 45
     },
     __self: undefined
-  }, "States")), __jsx("span", {
+  }, "County/State")), __jsx("span", {
     style: {
       border: "1px solid black",
       height: "60%"

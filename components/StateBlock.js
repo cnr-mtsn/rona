@@ -18,12 +18,12 @@ const StateBlock = ({ state }) => {
       <h3
         style={{
           textAlign: "center",
-          margin: "1vh 0 1vh 0",
+          margin: "1vh 0 0 0",
           fontSize: "1.25rem",
-          height: "4vh",
+          height: "3vh",
         }}
       >
-        {state.provinceState}
+        {state.combinedKey.substring(0, state.combinedKey.indexOf(","))}
       </h3>
       <div
         style={{

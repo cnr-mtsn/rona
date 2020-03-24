@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -130,16 +130,16 @@ const StateBlock = ({
   }, __jsx("h3", {
     style: {
       textAlign: "center",
-      margin: "1vh 0 1vh 0",
+      margin: "1vh 0 0 0",
       fontSize: "1.25rem",
-      height: "4vh"
+      height: "3vh"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: undefined
-  }, state.provinceState), __jsx("div", {
+  }, state.combinedKey.substring(0, state.combinedKey.indexOf(","))), __jsx("div", {
     style: {
       height: "1vh",
       borderTop: "1px solid black",
@@ -257,22 +257,111 @@ const StateStats = ({
     loading,
     error
   } = Object(_lib_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])(url);
+  const {
+    0: selectedState,
+    1: setSelectedState
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("Missouri");
   if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: undefined
   }, "Loading....");
   if (error) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     },
     __self: undefined
   }, "Error...");
-  console.log(stats);
-  return __jsx("div", {
+  let states = [];
+
+  for (let i = 0; i < stats.length; i++) {
+    if (states.indexOf(stats[i].provinceState) === -1) {
+      states.push(stats[i].provinceState);
+    }
+
+    states.sort();
+  }
+
+  console.log(states.length);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    style: {
+      display: "flex",
+      marginTop: "5vh",
+      justifyContent: "center"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, __jsx("span", {
+    style: {
+      margin: "0 2vw 0 0",
+      fontSize: "3vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: undefined
+  }, "Select a state:"), __jsx("select", {
+    style: {
+      width: "20vw",
+      border: "1px solid black",
+      background: "transparent",
+      boxShadow: "2px 2px grey",
+      fontSize: "20px"
+    },
+    onChange: e => {
+      setSelectedState(e.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  }, states.map(state => __jsx("option", {
+    value: state,
+    key: state,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }, state)))), __jsx("div", {
+    style: {
+      display: "flex",
+      justifyContent: "center",
+      marginTop: "5vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: undefined
+  }, __jsx("p", {
+    style: {
+      fontSize: "3vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: undefined
+  }, "Now viewing counties in:", " ", __jsx("span", {
+    style: {
+      fontWeight: "bold",
+      fontSize: "4vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: undefined
+  }, selectedState.toUpperCase()))), __jsx("div", {
     style: {
       display: "grid",
       gridTemplateColumns: "repeat(2, 1fr)",
@@ -284,17 +373,17 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 78
     },
     __self: undefined
-  }, stats.map(state => __jsx(_StateBlock__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, stats.map(state => state.provinceState === selectedState ? __jsx(_StateBlock__WEBPACK_IMPORTED_MODULE_2__["default"], {
     state: state,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 91
     },
     __self: undefined
-  })));
+  }) : null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (StateStats);
@@ -399,7 +488,7 @@ const states = () => {
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!*******************************!*\
   !*** multi ./pages/states.js ***!
   \*******************************/

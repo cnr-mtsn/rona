@@ -37,12 +37,12 @@ const Header = props => {
         </h2>
       </Link>
       <span style={{ border: "1px solid black", height: "60%" }}></span>
-      <Link href='/countries'>
-        <h2 style={{ cursor: "pointer" }}>Countries</h2>
+      <Link href='/usa'>
+        <h2 style={{ cursor: "pointer" }}>USA</h2>
       </Link>
       <span style={{ border: "1px solid black", height: "60%" }}></span>
       <Link href='/states'>
-        <h2 style={{ cursor: "pointer" }}>States</h2>
+        <h2 style={{ cursor: "pointer" }}>County/State</h2>
       </Link>
       <span style={{ border: "1px solid black", height: "60%" }}></span>
       <a

@@ -36,16 +36,16 @@ var StateBlock = function StateBlock(_ref) {
   }, __jsx("h3", {
     style: {
       textAlign: "center",
-      margin: "1vh 0 1vh 0",
+      margin: "1vh 0 0 0",
       fontSize: "1.25rem",
-      height: "4vh"
+      height: "3vh"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
-  }, state.provinceState), __jsx("div", {
+  }, state.combinedKey.substring(0, state.combinedKey.indexOf(","))), __jsx("div", {
     style: {
       height: "1vh",
       borderTop: "1px solid black",
@@ -163,22 +163,113 @@ var StateStats = function StateStats(_ref) {
       loading = _useStats.loading,
       error = _useStats.error;
 
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("Missouri"),
+      selectedState = _useState[0],
+      setSelectedState = _useState[1];
+
   if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: this
   }, "Loading....");
   if (error) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     },
     __self: this
   }, "Error...");
-  console.log(stats);
-  return __jsx("div", {
+  var states = [];
+
+  for (var i = 0; i < stats.length; i++) {
+    if (states.indexOf(stats[i].provinceState) === -1) {
+      states.push(stats[i].provinceState);
+    }
+
+    states.sort();
+  }
+
+  console.log(states.length);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    style: {
+      display: "flex",
+      marginTop: "5vh",
+      justifyContent: "center"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("span", {
+    style: {
+      margin: "0 2vw 0 0",
+      fontSize: "3vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Select a state:"), __jsx("select", {
+    style: {
+      width: "20vw",
+      border: "1px solid black",
+      background: "transparent",
+      boxShadow: "2px 2px grey",
+      fontSize: "20px"
+    },
+    onChange: function onChange(e) {
+      setSelectedState(e.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, states.map(function (state) {
+    return __jsx("option", {
+      value: state,
+      key: state,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }, state);
+  }))), __jsx("div", {
+    style: {
+      display: "flex",
+      justifyContent: "center",
+      marginTop: "5vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, __jsx("p", {
+    style: {
+      fontSize: "3vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }, "Now viewing counties in:", " ", __jsx("span", {
+    style: {
+      fontWeight: "bold",
+      fontSize: "4vh"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, selectedState.toUpperCase()))), __jsx("div", {
     style: {
       display: "grid",
       gridTemplateColumns: "repeat(2, 1fr)",
@@ -190,19 +281,19 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 78
     },
     __self: this
   }, stats.map(function (state) {
-    return __jsx(_StateBlock__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    return state.provinceState === selectedState ? __jsx(_StateBlock__WEBPACK_IMPORTED_MODULE_2__["default"], {
       state: state,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 91
       },
       __self: this
-    });
-  }));
+    }) : null;
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (StateStats);
@@ -1116,7 +1207,7 @@ var states = function states() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fstates&absolutePagePath=%2FUsers%2Fconnermatson%2FProjects%2Frona%2Fpages%2Fstates.js ***!
   \************************************************************************************************************************************/
@@ -1139,5 +1230,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[5,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=states.js.map

@@ -34,7 +34,7 @@ export default function CountrySelector() {
               key={code}
               value={countries.iso3[code]}
             >
-              {country}
+              {country.name}
             </option>
           ))}
         </select>
