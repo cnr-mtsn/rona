@@ -12,6 +12,7 @@
   "author": "Conner Matson",
   "license": "ISC",
   "dependencies": {
+    "@sentry/browser": "^5.15.4",
     "next": "^9.3.0",
     "nprogress": "^0.2.0",
     "react": "^16.13.0",

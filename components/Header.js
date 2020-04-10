@@ -45,6 +45,10 @@ const Header = props => {
         <h2 style={{ cursor: "pointer" }}>County/State</h2>
       </Link>
       <span style={{ border: "1px solid black", height: "60%" }}></span>
+      {/* <Link href='/daily'>
+        <h2 style={{ cursor: "pointer" }}>Daily</h2>
+      </Link>
+      <span style={{ border: "1px solid black", height: "60%" }}></span>*/}
       <a
         href='https://www.github.com/cnr-mtsn/rona'
         style={{

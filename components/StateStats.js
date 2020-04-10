@@ -4,7 +4,6 @@ import StateBlock from "./StateBlock";
 
 const StateStats = ({ url }) => {
   const { stats, loading, error } = useStats(url);
-
   const [selectedState, setSelectedState] = useState("Missouri");
 
   if (loading) return <p>Loading....</p>;

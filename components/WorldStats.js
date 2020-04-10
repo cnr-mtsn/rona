@@ -2,7 +2,11 @@ import React from "react";
 import Stats from "../components/Stats";
 
 const WorldStats = () => {
-  return <Stats url='https://covid19.mathdro.id/api' />;
+  return (
+    <div>
+      <Stats url='https://covid19.mathdro.id/api' />
+    </div>
+  );
 };
 
 export default WorldStats;

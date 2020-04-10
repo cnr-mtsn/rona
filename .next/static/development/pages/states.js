@@ -170,14 +170,14 @@ var StateStats = function StateStats(_ref) {
   if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, "Loading....");
   if (error) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }, "Error...");
@@ -200,7 +200,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
   }, __jsx("span", {
@@ -210,7 +210,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, "Select a state:"), __jsx("select", {
@@ -226,7 +226,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: this
   }, states.map(function (state) {
@@ -235,7 +235,7 @@ var StateStats = function StateStats(_ref) {
       key: state,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 52
       },
       __self: this
     }, state);
@@ -249,13 +249,13 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 58
     },
     __self: this
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 67
     },
     __self: this
   }, "Now viewing counties in:"), __jsx("span", {
@@ -266,7 +266,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 68
     },
     __self: this
   }, selectedState.toUpperCase())), __jsx("div", {
@@ -281,7 +281,7 @@ var StateStats = function StateStats(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 75
     },
     __self: this
   }, stats.map(function (state) {
@@ -289,7 +289,7 @@ var StateStats = function StateStats(_ref) {
       state: state,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89
+        lineNumber: 88
       },
       __self: this
     }) : null;
@@ -1207,7 +1207,7 @@ var states = function states() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fstates&absolutePagePath=%2FUsers%2Fconnermatson%2FProjects%2Frona%2Fpages%2Fstates.js ***!
   \************************************************************************************************************************************/
@@ -1230,5 +1230,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=states.js.map

@@ -24,11 +24,12 @@ const Stats = ({ url }) => {
       <div
         style={{
           textAlign: "center",
-          height: "15vh",
+          height: "20vh",
           width: "100vw",
           display: "flex",
           justifyContent: "center",
           flexDirection: "column",
+          margin: "1vw",
         }}
       >
         <h1>Confirmed</h1>
@@ -37,7 +38,7 @@ const Stats = ({ url }) => {
           style={{
             height: ".5px",
             borderTop: "1px solid black",
-            width: "50%",
+            width: "50vw",
             margin: "0 25vw 0 25vw",
           }}
         ></div>
@@ -47,7 +48,7 @@ const Stats = ({ url }) => {
         style={{
           textAlign: "center",
           height: "15vh",
-
+          margin: "1vw",
           width: "100vw",
           display: "flex",
           justifyContent: "center",
@@ -60,7 +61,7 @@ const Stats = ({ url }) => {
           style={{
             height: ".5px",
             borderTop: "1px solid black",
-            width: "50%",
+            width: "50vw",
             margin: "0 25vw 0 25vw",
           }}
         ></div>
@@ -70,7 +71,7 @@ const Stats = ({ url }) => {
         style={{
           textAlign: "center",
           height: "15vh",
-
+          margin: "1vw",
           width: "100vw",
           display: "flex",
           justifyContent: "center",
@@ -83,7 +84,7 @@ const Stats = ({ url }) => {
           style={{
             height: ".5px",
             borderTop: "1px solid black",
-            width: "50%",
+            width: "50vw",
             margin: "0 25vw 0 25vw",
           }}
         ></div>
@@ -93,7 +94,7 @@ const Stats = ({ url }) => {
         style={{
           textAlign: "center",
           height: "15vh",
-
+          margin: "1vw",
           width: "100vw",
           display: "flex",
           justifyContent: "center",

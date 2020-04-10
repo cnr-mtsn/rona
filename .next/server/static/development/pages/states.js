@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -264,14 +264,14 @@ const StateStats = ({
   if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: undefined
   }, "Loading....");
   if (error) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: undefined
   }, "Error...");
@@ -294,7 +294,7 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: undefined
   }, __jsx("span", {
@@ -304,7 +304,7 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: undefined
   }, "Select a state:"), __jsx("select", {
@@ -320,7 +320,7 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: undefined
   }, states.map(state => __jsx("option", {
@@ -328,7 +328,7 @@ const StateStats = ({
     key: state,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 52
     },
     __self: undefined
   }, state)))), __jsx("div", {
@@ -341,13 +341,13 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 58
     },
     __self: undefined
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 67
     },
     __self: undefined
   }, "Now viewing counties in:"), __jsx("span", {
@@ -358,7 +358,7 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 68
     },
     __self: undefined
   }, selectedState.toUpperCase())), __jsx("div", {
@@ -373,14 +373,14 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 75
     },
     __self: undefined
   }, stats.map(state => state.provinceState === selectedState ? __jsx(_StateBlock__WEBPACK_IMPORTED_MODULE_2__["default"], {
     state: state,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 88
     },
     __self: undefined
   }) : null)));
@@ -488,7 +488,7 @@ const states = () => {
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!*******************************!*\
   !*** multi ./pages/states.js ***!
   \*******************************/
