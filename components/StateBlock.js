@@ -3,7 +3,6 @@ import formatNumber from "../lib/formatNumber";
 
 const StateBlock = ({ state }) => {
   console.log(state);
-
   return (
     <div
       style={{
@@ -49,7 +48,10 @@ const StateBlock = ({ state }) => {
           Active: <span>{formatNumber(state.active)}</span>
         </p>
         <p style={{ fontSize: "1.2rem" }}>
-          Recovered: <span>{formatNumber(state.recovered)}</span>
+          Recovered:
+          <span>
+            {formatNumber(state.confirmed - state.deaths - state.active)}
+          </span>
         </p>
         <p style={{ fontSize: "1.2rem" }}>
           Deaths: <span>{formatNumber(state.deaths)}</span>

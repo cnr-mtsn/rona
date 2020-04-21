@@ -13,6 +13,17 @@ const Stats = ({ url }) => {
     stats.deaths.value
   ).toFixed(2);
 
+  const categoryStyle = {
+    textAlign: "center",
+    height: "20vh",
+    width: "100vw",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    margin: "1vw",
+  };
+
+  console.log(stats);
   return (
     <div
       style={{
@@ -21,17 +32,7 @@ const Stats = ({ url }) => {
         marginTop: "5vh",
       }}
     >
-      <div
-        style={{
-          textAlign: "center",
-          height: "20vh",
-          width: "100vw",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          margin: "1vw",
-        }}
-      >
+      <div style={categoryStyle}>
         <h1>Confirmed</h1>
         <h2>{formatNumber(stats.confirmed.value)}</h2>
         <div
@@ -44,17 +45,7 @@ const Stats = ({ url }) => {
         ></div>
       </div>
 
-      <div
-        style={{
-          textAlign: "center",
-          height: "15vh",
-          margin: "1vw",
-          width: "100vw",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
+      <div style={categoryStyle}>
         <h1>Recovered</h1>
         <h2>{formatNumber(stats.recovered.value)}</h2>
         <div
@@ -67,17 +58,7 @@ const Stats = ({ url }) => {
         ></div>
       </div>
 
-      <div
-        style={{
-          textAlign: "center",
-          height: "15vh",
-          margin: "1vw",
-          width: "100vw",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
+      <div style={categoryStyle}>
         <h1>Deaths</h1>
         <h2>{formatNumber(stats.deaths.value)}</h2>
         <div

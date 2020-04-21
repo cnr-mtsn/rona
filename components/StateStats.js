@@ -10,14 +10,13 @@ const StateStats = ({ url }) => {
   if (error) return <p>Error...</p>;
 
   let states = [];
+
   for (let i = 0; i < stats.length; i++) {
     if (states.indexOf(stats[i].provinceState) === -1) {
       states.push(stats[i].provinceState);
     }
     states.sort();
   }
-
-  console.log(states.length);
 
   return (
     <>

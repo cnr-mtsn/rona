@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -124,7 +124,7 @@ const StateBlock = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: undefined
   }, __jsx("h3", {
@@ -136,7 +136,7 @@ const StateBlock = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: undefined
   }, state.combinedKey.substring(0, state.combinedKey.indexOf(","))), __jsx("div", {
@@ -147,7 +147,7 @@ const StateBlock = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 27
     },
     __self: undefined
   }), __jsx("div", {
@@ -160,7 +160,7 @@ const StateBlock = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     },
     __self: undefined
   }, __jsx("p", {
@@ -169,13 +169,13 @@ const StateBlock = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 44
     },
     __self: undefined
   }, "Confirmed: ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: undefined
   }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__["default"])(state.confirmed))), __jsx("p", {
@@ -184,13 +184,13 @@ const StateBlock = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: undefined
   }, "Active: ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     },
     __self: undefined
   }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__["default"])(state.active))), __jsx("p", {
@@ -199,28 +199,28 @@ const StateBlock = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 50
     },
     __self: undefined
-  }, "Recovered: ", __jsx("span", {
+  }, "Recovered:", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
     },
     __self: undefined
-  }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__["default"])(state.recovered))), __jsx("p", {
+  }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__["default"])(state.confirmed - state.deaths - state.active))), __jsx("p", {
     style: {
       fontSize: "1.2rem"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 56
     },
     __self: undefined
   }, "Deaths: ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 57
     },
     __self: undefined
   }, Object(_lib_formatNumber__WEBPACK_IMPORTED_MODULE_1__["default"])(state.deaths)))));
@@ -285,7 +285,6 @@ const StateStats = ({
     states.sort();
   }
 
-  console.log(states.length);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
     style: {
       display: "flex",
@@ -294,7 +293,7 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 23
     },
     __self: undefined
   }, __jsx("span", {
@@ -304,7 +303,7 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
     },
     __self: undefined
   }, "Select a state:"), __jsx("select", {
@@ -320,7 +319,7 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: undefined
   }, states.map(state => __jsx("option", {
@@ -328,7 +327,7 @@ const StateStats = ({
     key: state,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 51
     },
     __self: undefined
   }, state)))), __jsx("div", {
@@ -341,13 +340,13 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 57
     },
     __self: undefined
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 66
     },
     __self: undefined
   }, "Now viewing counties in:"), __jsx("span", {
@@ -358,7 +357,7 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 67
     },
     __self: undefined
   }, selectedState.toUpperCase())), __jsx("div", {
@@ -373,14 +372,14 @@ const StateStats = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 74
     },
     __self: undefined
   }, stats.map(state => state.provinceState === selectedState ? __jsx(_StateBlock__WEBPACK_IMPORTED_MODULE_2__["default"], {
     state: state,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 87
     },
     __self: undefined
   }) : null)));
@@ -488,7 +487,7 @@ const states = () => {
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/states.js ***!
   \*******************************/
